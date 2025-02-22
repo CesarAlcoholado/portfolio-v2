@@ -10,7 +10,7 @@ function App() {
   return (
     <BrowserRouter>
       <PortfolioProvider>
-        <div className="w-full h-screen flex flex-col">
+        <div>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/blogs" element={<Blogs />} />

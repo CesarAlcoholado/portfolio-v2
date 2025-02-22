@@ -1,16 +1,32 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
+@custom-variant dark (&:where(.dark, .dark *));
+
+.body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@theme {
+  --color-backgroundDark: rgb(13 16 20);
+  --color-backgroundLight: rgb(249 250 251);
+  --color-cardDark: rgb(27 32 36);
+  --color-cardLight: rgb(249 250 251);
+  --color-borderDark: rgb(54 65 79);
+  --color-borderLight: rgb(255 255 255);
+}
 
 .dark {
-  --background-dark: rgb(13 16 20);
+  /* --background-dark: rgb(13 16 20);
   --card-dark: rgb(27 32 36);
-  --border-dark: rgb(54 65 79);
-  background-color: var(--background-dark);
+  --border-dark: rgb(54 65 79); */
+  background-color: rgb(13 16 20);
 }
 
 .light {
-  --background-light: rgb(249 250 251);
+  /* --background-light: rgb(249 250 251);
   --card-light: rgb(249 250 251);
-  --border-light: rgb(255 255 255);
-  background-color: var(--backgroundLight)
+  --border-light: rgb(255 255 255); */
+  background-color: rgb(249 250 251)
 }

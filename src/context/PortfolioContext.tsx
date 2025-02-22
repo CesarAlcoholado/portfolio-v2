@@ -2,7 +2,7 @@ import { createContext, ReactNode, useContext, useEffect, useState } from "react
 
 type PortfolioContext = {
   toggleMode: ()=>void;
-  // toggleLang: ()=> void;
+  theme: string
 }
 
 type PortfolioProviderProps = {
@@ -45,11 +45,12 @@ export function PortfolioProvider ({children}: PortfolioProviderProps) {
       setTheme(newTheme);
       localStorage.setItem("theme", newTheme);
     };
-    
+
   return (
     <PortfolioContext.Provider
     value={{
       toggleMode,
+      theme
     }}
     >
       {children}

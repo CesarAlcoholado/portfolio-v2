@@ -10,12 +10,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        backgroundDark: "var(--background-dark)",
-        backgroundLight: "var(--background-light)",
-        cardDark: "var(--card-dark)",
-        cardLight: "var(--card-light)",
-        borderDark: "var(--border-dark)",
-        borderLight: "var(--border-light)",
+
       },
     },
   },
