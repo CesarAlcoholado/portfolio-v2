@@ -28,16 +28,23 @@ export function PortfolioProvider ({children}: PortfolioProviderProps) {
     initialTheme
   );
    
-   const toggleMode = () => {
-     if (theme === "dark") {
-       body.classList.replace("dark", "light");
-       setTheme("light")
-       localStorage.setItem("theme", "light")
-      } else {
-        body.classList.replace("light", "dark");
-        setTheme("dark")
-       localStorage.setItem("theme", "dark")}
-    }
+  //  const toggleMode = () => {
+  //    if (theme === "dark") {
+  //      body.classList.replace("dark", "light");
+  //      setTheme("light")
+  //      localStorage.setItem("theme", "light")
+  //     } else {
+  //       body.classList.replace("light", "dark");
+  //       setTheme("dark")
+  //      localStorage.setItem("theme", "dark")
+  //     }
+  //   }
+    const toggleMode = () => {
+      const newTheme = theme === "dark" ? "light" : "dark";
+      body.classList.replace(theme, newTheme); // Reemplaza directamente el tema actual
+      setTheme(newTheme);
+      localStorage.setItem("theme", newTheme);
+    };
     
   return (
     <PortfolioContext.Provider
