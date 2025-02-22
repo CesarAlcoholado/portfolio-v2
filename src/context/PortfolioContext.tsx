@@ -16,22 +16,27 @@ export const usePortfolioContext = () => {
 };
 
 export function PortfolioProvider ({children}: PortfolioProviderProps) {
+  const body = document.body;
   const storedTheme = localStorage.getItem("theme");
+  if(storedTheme) {
+    body.classList.add(storedTheme)
+  }else {
+    body.classList.add("light")
+  } 
   const initialTheme = storedTheme ? storedTheme : "light";
   const [theme, setTheme] = useState<string>(
     initialTheme
   );
-   const body = document.body;
    
    const toggleMode = () => {
      if (theme === "dark") {
        body.classList.replace("dark", "light");
        setTheme("light")
+       localStorage.setItem("theme", "light")
       } else {
         body.classList.replace("light", "dark");
         setTheme("dark")
-      }
-      console.log('tema: ', theme);
+       localStorage.setItem("theme", "dark")}
     }
     
   return (
