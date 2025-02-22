@@ -1,2 +1,16 @@
 @import "tailwindcss";
-@plugin "@tailwindcss/typography"
+@plugin "@tailwindcss/typography";
+
+.dark {
+  --background-dark: rgb(13 16 20);
+  --card-dark: rgb(27 32 36);
+  --border-dark: rgb(54 65 79);
+  background-color: var(--background-dark);
+}
+
+.light {
+  --background-light: rgb(249 250 251);
+  --card-light: rgb(249 250 251);
+  --border-light: rgb(255 255 255);
+  background-color: var(--backgroundLight)
+}
