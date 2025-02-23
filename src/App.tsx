@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import { Blogs } from './components/Blogs';
+import { Blogs } from './pages/Blogs';
 import { Home } from './pages/Home';
 import { PortfolioProvider } from './context/PortfolioContext';
 
