@@ -3,6 +3,8 @@ import { Language } from "../components/Language";
 import { Location } from "../components/Location";
 import { Mode } from "../components/Mode";
 import { Profile } from "../components/Profile";
+import { Projects } from "../components/Projects";
+import { Weather } from "../components/Weather";
 import { usePortfolioContext } from "../context/PortfolioContext";
 
 export const Home = () => {
@@ -30,6 +32,8 @@ export const Home = () => {
       <Mode/>
       <Location/>
       <BlogCard/>
+      <Weather/>
+      <Projects/>
       {/* <img
           src={planet}
           className="relative object-cover w-full h-full rounded-[100%] inset-ring-[40px]"
