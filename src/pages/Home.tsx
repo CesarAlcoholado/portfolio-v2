@@ -1,9 +1,14 @@
 import { BlogCard } from "../components/BlogCard";
+import { Email } from "../components/Email";
+import { Github } from "../components/Github";
 import { Language } from "../components/Language";
+import { Linkedin } from "../components/Linkedin";
 import { Location } from "../components/Location";
 import { Mode } from "../components/Mode";
 import { Profile } from "../components/Profile";
 import { Projects } from "../components/Projects";
+import { Stack } from "../components/Stack";
+import { Twitter } from "../components/Twitter";
 import { Weather } from "../components/Weather";
 import { usePortfolioContext } from "../context/PortfolioContext";
 
@@ -34,14 +39,11 @@ export const Home = () => {
       <BlogCard/>
       <Weather/>
       <Projects/>
-      {/* <img
-          src={planet}
-          className="relative object-cover w-full h-full rounded-[100%] inset-ring-[40px]"
-          /> */}
-      {/* <div className="relative w-[500px] h-[500px] bg-blue-950 rounded-xl before:absolute before:content-[''] before:w-[50px] before:h-[17px] before:bg-transparent before:rounded-br-[12px] before:[box-shadow:5px_5px_#0D1014] before:bottom-[0px] before:right-[373px] z-10"></div>
-      <div className="absolute w-[250px] h-[250px] rounded-[100%] bg-indigo-700 border-solid border-[5px] border-[#0D1014] top-[50%] translate-y-[-50%] overflow-hidden z-20"></div>
-      <div className="w-[500px] h-[500px] bg-blue-950 rounded-xl"></div>
-        <button className="border border-solid border-b-black w-3xs h-10 bg-amber-50" onClick={toggleMode}></button> */}
+      <Stack/>
+      <Twitter/>
+      <Linkedin/>
+      <Email/>
+      <Github/>
     </div>
   );
 }
