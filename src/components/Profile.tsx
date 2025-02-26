@@ -8,8 +8,8 @@ export const Profile = () => {
   const { theme } = usePortfolioContext()
 
   return (
-    <div className="col-span-2 w-full h-auto rounded-md bg-cardLight border-borderLight border-2 border-solid dark:bg-cardDark dark:border-borderDark shadow-sm shadow-gray-900/5">
-      <div className="h-full w-full flex flex-col border-gray-100 rounded-md border-[1px] gap-2.5 p-3 dark:border-gray-800">
+    <div className="col-span-2 w-full h-auto rounded-md bg-cardLight border-borderLight border-4 border-solid dark:bg-backgroundDark dark:border-borderDark shadow-sm shadow-gray-900/5">
+      <div className="h-full w-full flex flex-col border-gray-100 rounded-md border-[1px] gap-2.5 p-4 dark:border-gray-800">
         <div className="flex w-full justify-between">
           <h4 className="text-sm text-gray-500 font-medium dark:text-gray-200 font-montserrat">
             ABOUT ME
@@ -72,25 +72,25 @@ export const Profile = () => {
             •
             <span className="text-md text-gray-700 font-light dark:text-gray-200 ml-3">
               {" "}
-              31 Years old
+              31 years old
             </span>
           </li>
           <li className="text-md text-blue-500 font-bold">
             •
             <span className="text-md text-gray-700 font-light dark:text-gray-200 ml-3">
-              Cat Dad
+              Cat dad
             </span>
           </li>
           <li className="text-md text-blue-500 font-bold">
             •
             <span className="text-md text-gray-700 font-light dark:text-gray-200 ml-3">
-              C2 English level
+              C2 english level
             </span>
           </li>
           <li className="text-md text-blue-500 font-bold">
             •
             <span className="text-md text-gray-700 font-light dark:text-gray-200 ml-3">
-              Always Learning
+              Always learning
             </span>
           </li>
         </ul>
