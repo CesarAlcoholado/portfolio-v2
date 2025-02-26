@@ -10,7 +10,7 @@ export const Language = () => {
         <span className="text-[12px] text-gray-500 dark:text-gray-200">
           lang.
         </span>
-        <p className="flex gap-1 text-3xl text-gray-500 font-medium dark:text-gray-200">
+        <p className="flex gap-1 text-2xl text-gray-500 font-medium dark:text-gray-200">
           <svg
             fill="none"
             viewBox="0 0 24 24"

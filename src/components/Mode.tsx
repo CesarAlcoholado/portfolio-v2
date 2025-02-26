@@ -14,7 +14,7 @@ export const Mode = () => {
         <span className="text-[12px] text-gray-500 dark:text-gray-200">
           {theme}
         </span>
-        <p className="flex text-3xl text-gray-500 font-medium dark:text-gray-200 gap-2">
+        <p className="flex text-2xl text-gray-500 font-medium dark:text-gray-200 gap-2">
           MODE
           {theme == "dark" ? (
             <svg
