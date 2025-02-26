@@ -1,20 +1,12 @@
 import { usePortfolioContext } from "../context/PortfolioContext";
+import { svgColor } from "../utils/constants"
 
 export const Language = () => {
   const { theme } = usePortfolioContext()
-    interface SvgColor {
-      [light: string]: string;
-      dark: string;
-    }
 
-    const svgColor: SvgColor = {
-      light: "#6a7282",
-      dark: "#eeeeee",
-    };
-    
   return (
     <div className="w-full h-[130px] rounded-md bg-cardLight border-borderLight border-2 border-solid dark:bg-cardDark dark:border-borderDark shadow-sm shadow-gray-900/5">
-      <div className="h-full w-full border-gray-100 rounded-md border-[1px] flex flex-col justify-center items-center gap-1.5 p-2 dark:border-gray-800">
+      <div className="h-full w-full border-gray-100 rounded-md border-[1px] flex flex-col justify-center items-center p-2 dark:border-gray-800">
         <span className="text-[12px] text-gray-500 dark:text-gray-200">
           lang.
         </span>
@@ -24,7 +16,7 @@ export const Language = () => {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke={`${svgColor[theme]}`}
-            width={"24px"}
+            width={"28px"}
           >
             <path
               strokeLinecap="round"

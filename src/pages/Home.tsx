@@ -10,11 +10,8 @@ import { Projects } from "../components/Projects";
 import { Stack } from "../components/Stack";
 import { Twitter } from "../components/Twitter";
 import { Weather } from "../components/Weather";
-import { usePortfolioContext } from "../context/PortfolioContext";
 
 export const Home = () => {
-
-  const { toggleMode, theme } = usePortfolioContext();
 
   // interface Bg {
   //   [key: string]: string,
@@ -30,8 +27,7 @@ export const Home = () => {
   // }
 
   return (
-    // <div className="relative flex flex-col w-full h-[500px] justify-center items-center gap-[10px]">
-    <div className="grid grid-cols-2 w-auto gap-2.5 h-auto place-items-center m-1.5">
+    <div className="grid grid-cols-2 w-auto gap-2.5 h-auto place-items-center m-1.5 font-montserrat">
       <Profile/>
       <Language/>
       <Mode/>

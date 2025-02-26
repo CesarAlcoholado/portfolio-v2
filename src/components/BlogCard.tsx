@@ -1,3 +1,4 @@
+import { TypingEffect } from "./Typing-effect";
 
 export const BlogCard = () => {
   return (
@@ -9,6 +10,7 @@ export const BlogCard = () => {
         <p className="flex text-3xl text-gray-500 font-medium dark:text-gray-200">
           Non enim
         </p>
+        <TypingEffect text="Typing Effect" />
       </div>
     </div>
   );
