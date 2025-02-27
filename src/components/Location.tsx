@@ -9,7 +9,7 @@ export const Location = () => {
         <p className="flex text-2xl text-gray-700 font-medium dark:text-gray-200 z-10">
           BUENOS AIRES
         </p>
-        <div className="absolute w-full h-full rounded-md opacity-70 bg-[url(/src/assets/BsAsSilohuete.jpg)] bg-cover bg-no-repeat top-0 bottom-0"></div>
+        <div className="absolute w-full h-full rounded-md opacity-70 bg-[url(/src/assets/locationCard/BsAsSilohuete.jpg)] bg-cover bg-no-repeat top-0 bottom-0"></div>
       </div>
     </div>
     )}

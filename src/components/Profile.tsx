@@ -1,5 +1,5 @@
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import Simon from "../assets/Simon.jpg";
+import Simon from "../assets/profileCard/Simon.jpg";
 import { svgColor } from "../utils/constants";
 import { usePortfolioContext } from "../context/PortfolioContext";
 
