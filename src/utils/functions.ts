@@ -1,27 +1,19 @@
 import axios from 'axios';
-import { Root, WeatherIcons } from '../types';
+import { Data, Root } from '../types';
 
 //******* weather card *******/
-export const getWeather = async () => {
-
-  const APIKEY = import.meta.env.VITE_WEATHER_API_KEY;
-
+const APIKEY = import.meta.env.VITE_WEATHER_API_KEY;
+export const getWeather = async (): Promise<Data | null> => {
+  let result: Root;
   try {
-    const result: Root = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=Bahia Blanca&appid=${APIKEY}`);
-    console.log(result.data)
+    result = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=Bahia Blanca&appid=${APIKEY}&units=metric`);
+    return result.data
   } catch (error) {
     console.error(error)
+    return null
   }
 }
 
-export const weatherIcon: WeatherIcons = {
-  "clear sky": "sol.jpg",
-  "few clouds": "sol.jpg",
-  "scattered clouds": "sol.jpg",
-  "broken clouds": "sol.jpg",
-  "shower rain": "lluvia.jpg", //drizle
-  "rain": "lluvia.jpg",
-  "thunderstorm": "lluvia.jpg",
-  "snow": "snow.jpg",
-  "mist": "mist.jpg"
+export const fhToCelsius = (temp:number | undefined)=> {
+  return temp ? Math.floor((temp - 32) * 1.8).toFixed(1) : 0
 }

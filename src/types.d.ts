@@ -8,11 +8,6 @@
 
   export interface Root {
   data: Data
-  status: number
-  statusText: string
-  headers: Headers
-  config: Config
-  request: Request
 }
 
   interface Data {

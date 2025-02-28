@@ -1,18 +1,26 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { getWeather } from "../utils/functions";
-import { svgColor } from "../utils/constants";
+import { svgColor, weatherIcon } from "../utils/constants";
 import { usePortfolioContext } from "../context/PortfolioContext";
+import { Data, Root } from "../types";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import { fhToCelsius } from "../utils/functions";
 
 export const Weather = () => {
-
+  const [weather, setWeather] = useState<Data | null>()
   const { theme } = usePortfolioContext()
-    // useEffect(() => {
-    //   const callApi = async () => {
-    //     const result = await getWeather();
-    //     return result;
-    //   };
-    //   callApi();
-    // }, []);
+
+    useEffect(() => {
+      try {
+        const callApi = async () => {
+          const result = await getWeather();
+          setWeather(result);
+        };
+        callApi()
+      } catch (error) {
+        console.error(error)
+      }
+    }, []);
 
   return (
     <div className="w-full h-[130px] rounded-md bg-cardLight border-borderLight border-4 border-solid dark:bg-backgroundDark dark:border-borderDark shadow-sm shadow-gray-900/5">
@@ -31,9 +39,16 @@ export const Weather = () => {
               d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z"
             />
           </svg>
-          weather
+          WEATHER
         </span>
-        <p className="text-2xl text-gray-500 dark:text-gray-200">Wheather</p>
+        {/* <div className="flex flex-col items-center gap-3"> */}
+          <p className="text-3xl font-medium text-gray-500 dark:text-gray-200">
+            {/* {fhToCelsius(weather?.main.temp)} */}
+            {weather?.main.temp.toFixed(1)} ℃
+          </p>
+           <span className="flex text-[12px] text-gray-500 dark:text-gray-200 gap-2 text-center">{weather?.weather[0].description}</span>
+          {/* <LazyLoadImage src={weather?.weather[0].description ? weatherIcon[weather?.weather[0].description] : ""} className="w-10 h-10"/> */}
+        {/* </div> */}
       </div>
     </div>
   );
