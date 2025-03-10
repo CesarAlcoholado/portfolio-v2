@@ -7,16 +7,16 @@ export const Stack = () => {
 
   return (
     <div className="col-span-2 w-full h-[250px] rounded-md bg-cardLight border-borderLight border-4 border-solid dark:bg-backgroundDark dark:border-borderDark shadow-sm shadow-gray-900/5">
-      <div className="h-full w-full border-gray-100 rounded-md border-[1px] flex flex-col justify-center items-center gap-1.5 p-4 dark:border-gray-800">
+      <div className="h-full w-full border-gray-100 rounded-md border-[1px] flex flex-col justify-center items-center gap-1.5 p-2 dark:border-gray-800">
         <h3 className="text-3xl text-gray-500 dark:text-gray-200 text-center mb-2">
           What i use
         </h3>
         <ul className="list-none flex flex-col flex-wrap h-24 p-0 gap-1">
-          <li className="flex text-md text-gray-700 font-light dark:text-gray-200 ml-3">
+          <li className="flex text-md text-gray-700 font-light dark:text-gray-200 ml-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 128 128"
-              className="w-[20px]"
+              className="w-[20px] mr-2"
             >
               <g fill={`${svgColor[theme]}`}>
                 <circle cx="64" cy="64" r="11.4" />
@@ -25,11 +25,11 @@ export const Stack = () => {
             </svg>
             React
           </li>
-          <li className="flex text-md text-gray-700 font-light dark:text-gray-200 ml-3">
+          <li className="flex text-md text-gray-700 font-light dark:text-gray-200 ml-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 128 128"
-              className="w-[20px]"
+              className="w-[20px] mr-2"
             >
               <path
                 fill={`${svgColor[theme]}`}
@@ -38,11 +38,11 @@ export const Stack = () => {
             </svg>
             Redux
           </li>
-          <li className="flex text-md text-gray-700 font-light dark:text-gray-200 ml-3">
+          <li className="flex text-md text-gray-700 font-light dark:text-gray-200 ml-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 128 128"
-              className="w-[20px]"
+              className="w-[20px] mr-2"
             >
               <path
                 d="M64.004 25.602c-17.067 0-27.73 8.53-32 25.597 6.398-8.531 13.867-11.73 22.398-9.597 4.871 1.214 8.352 4.746 12.207 8.66C72.883 56.629 80.145 64 96.004 64c17.066 0 27.73-8.531 32-25.602-6.399 8.536-13.867 11.735-22.399 9.602-4.87-1.215-8.347-4.746-12.207-8.66-6.27-6.367-13.53-13.738-29.394-13.738zM32.004 64c-17.066 0-27.73 8.531-32 25.602C6.402 81.066 13.87 77.867 22.402 80c4.871 1.215 8.352 4.746 12.207 8.66 6.274 6.367 13.536 13.738 29.395 13.738 17.066 0 27.73-8.53 32-25.597-6.399 8.531-13.867 11.73-22.399 9.597-4.87-1.214-8.347-4.746-12.207-8.66C55.128 71.371 47.868 64 32.004 64zm0 0"
@@ -51,11 +51,11 @@ export const Stack = () => {
             </svg>
             Tailwind
           </li>
-          <li className="flex text-md text-gray-700 font-light dark:text-gray-200 ml-3">
+          <li className="flex text-md text-gray-700 font-light dark:text-gray-200 ml-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 128 128"
-              className="w-[20px]"
+              className="w-[20px] mr-2"
             >
               <path fill="#fff" d="M22.67 47h99.67v73.67H22.67z" />
               <path
@@ -66,11 +66,11 @@ export const Stack = () => {
             </svg>
             Typescript
           </li>
-          <li className="flex text-md text-gray-700 font-light dark:text-gray-200 ml-3">
+          <li className="flex text-md text-gray-700 font-light dark:text-gray-200 ml-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 128 128"
-              className="w-[20px]"
+              className="w-[20px] mr-2"
             >
               <path
                 fill={`${svgColor[theme]}`}
@@ -95,11 +95,11 @@ export const Stack = () => {
             </svg>
             Figma
           </li>
-          <li className="flex text-md text-gray-700 font-light dark:text-gray-200 ml-3">
+          <li className="flex text-md text-gray-700 font-light dark:text-gray-200 ml-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 128 128"
-              className="w-[20px]"
+              className="w-[20px] mr-2"
             >
               <path
                 fill={`${svgColor["light"]}`}
@@ -128,11 +128,11 @@ export const Stack = () => {
             </svg>
             CSS
           </li>
-          <li className="flex text-md text-gray-700 font-light dark:text-gray-200 ml-3">
+          <li className="flex text-md text-gray-700 font-light dark:text-gray-200 ml-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 128 128"
-              className="w-[20px]"
+              className="w-[20px] mr-2"
             >
               <path
                 fill={`${svgColor["light"]}`}
@@ -153,11 +153,11 @@ export const Stack = () => {
             </svg>
             HTML
           </li>
-          <li className="flex text-md text-gray-700 font-light dark:text-gray-200 ml-3">
+          <li className="flex text-md text-gray-700 font-light dark:text-gray-200 ml-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 128 128"
-              className="w-[20px]"
+              className="w-[20px] mr-2"
             >
               <path
                 fill={`${svgColor[theme]}`}
@@ -166,11 +166,11 @@ export const Stack = () => {
             </svg>
             Node
           </li>
-          <li className="flex text-md text-gray-700 font-light dark:text-gray-200 ml-3">
+          <li className="flex text-md text-gray-700 font-light dark:text-gray-200 ml-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 128 128"
-              className="w-[20px]"
+              className="w-[20px] mr-2"
             >
               <g fill={`${svgColor[theme]}`}>
                 <path
