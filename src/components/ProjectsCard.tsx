@@ -1,7 +1,7 @@
 import { usePortfolioContext } from "../context/PortfolioContext";
 import { svgColor } from "../utils/constants";
 
-export const Projects = () => {
+export const ProjectsCard = () => {
   const { theme } = usePortfolioContext()
 
   return (

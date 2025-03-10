@@ -6,7 +6,7 @@ import { Linkedin } from "../components/Linkedin";
 import { Location } from "../components/Location";
 import { Mode } from "../components/Mode";
 import { Profile } from "../components/Profile";
-import { Projects } from "../components/Projects";
+import { ProjectsCard } from "../components/ProjectsCard";
 import { Stack } from "../components/Stack";
 import { Twitter } from "../components/Twitter";
 import { Weather } from "../components/Weather";
@@ -34,7 +34,7 @@ export const Home = () => {
       <Location/>
       <BlogCard/>
       <Weather/>
-      <Projects/>
+      <ProjectsCard/>
       <Stack/>
       <Twitter/>
       <Linkedin/>

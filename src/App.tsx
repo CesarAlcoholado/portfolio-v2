@@ -4,6 +4,7 @@ import { Blogs } from './pages/Blogs';
 import { Home } from './pages/Home';
 import { PortfolioProvider } from './context/PortfolioContext';
 import { NavBar } from './components/NavBar';
+import { Projects } from './pages/Projects';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,6 +17,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/blogs" element={<Blogs />} />
+            <Route path="/projects" element={<Projects />} />
           </Routes>
         </div>
       </PortfolioProvider>
