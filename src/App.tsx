@@ -4,7 +4,7 @@ import { Blogs } from './pages/Blogs';
 import { Home } from './pages/Home';
 import { PortfolioProvider } from './context/PortfolioContext';
 import { NavBar } from './components/NavBar';
-import { Projects } from './pages/Projects';
+import { Projects } from './pages/Projects'
 
 function App() {
   const [count, setCount] = useState(0)

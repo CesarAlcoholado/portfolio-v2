@@ -1,6 +1,6 @@
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import pfp from "../assets/profileCard/ProfileIcon.png"
 import projects from "../utils/projects.json";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 export const Projects = () => {
   return (
@@ -52,10 +52,25 @@ export const Projects = () => {
         </div>
       </div> */}
       {projects.map((project, index) => (
-        <div className="w-full h-auto rounded-md bg-cardLight border-borderLight border-4 border-solid dark:bg-backgroundDark dark:border-borderDark shadow-sm shadow-gray-900/5" key={index}>
+        <div
+          className="w-full h-auto rounded-md bg-cardLight border-borderLight border-4 border-solid dark:bg-backgroundDark dark:border-borderDark shadow-sm shadow-gray-900/5"
+          key={index}
+        >
           <div className="h-full w-full border-gray-100 rounded-md border-[1px] flex flex-col justify-center items-center gap-1.5 p-2 dark:border-gray-800">
-            {JSON.stringify(project.name)}
-            <LazyLoadImage src={(project.image)} width={"100%"} />
+            <p className="text-base text-gray-500 dark:text-gray-200">
+              {project.name}
+            </p>
+            <LazyLoadImage
+            effect="blur"
+              // placeholder={
+              //   <span className="text-3xl text-gray-500 dark:text-gray-200">
+              //     Loading...
+              //   </span>
+              // }
+              onLoad={() => console.log("loading")}
+              src={project.image}
+              width={"100%"}
+            />
           </div>
         </div>
       ))}

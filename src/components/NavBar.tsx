@@ -1,10 +1,6 @@
-import { Link } from "react-router-dom";
-import { svgColor } from "../utils/constants";
-import { usePortfolioContext } from "../context/PortfolioContext";
+
 
 export const NavBar = () => {
-
-  const { theme } = usePortfolioContext()
 
   return (
     <nav className="w-auto h-11 rounded-md bg-cardLight border-borderLight border-4 border-solid dark:bg-backgroundDark dark:border-borderDark shadow-sm shadow-gray-900/5 m-1.5">

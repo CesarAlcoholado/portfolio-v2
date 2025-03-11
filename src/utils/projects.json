@@ -3,36 +3,36 @@
     "name": "Parcel Plus",
     "description": "SPA made for a logistics & transport company",
     "stack": ["React","HTML","CSS"],
-    "image": "../../assets/profileCard/ProfileIcon.png"
+    "image": "/projectImages/ParcelPlus.jpg"
   },
   {
-    "name": "Parcel Plus",
-    "description": "SPA made for a logistics & transport company",
-    "stack": ["React","HTML","CSS"],
-    "image": "../../assets/profileCard/ProfileIcon.png"
+    "name": "Digital Menu",
+    "description": "Web app for ordering food by scanning a QrCode",
+    "stack": ["React", "Redux", "HTML","CSS", "SASS"],
+    "image": "/projectImages/ImenuClient.jpg"
   },
   {
-    "name": "Parcel Plus",
-    "description": "SPA made for a logistics & transport company",
-    "stack": ["React","HTML","CSS"],
-    "image": "../../assets/profileCard/ProfileIcon.png"
+    "name": "Commerce Dashboard",
+    "description": "Web app made for food orders managment",
+    "stack": ["React", "Redux", "HTML","CSS", "SASS"],
+    "image": "/projectImages/ImenuAdmin.jpg"
   },
   {
-    "name": "Parcel Plus",
-    "description": "SPA made for a logistics & transport company",
-    "stack": ["React","HTML","CSS"],
-    "image": "../../assets/profileCard/ProfileIcon.png"
+    "name": "Maps app",
+    "description": "Interactive map for calculating routes and distances",
+    "stack": ["React","Typescript", "HTML","CSS"],
+    "image": "/projectImages/MapsApp.png"
   },
   {
-    "name": "Parcel Plus",
-    "description": "SPA made for a logistics & transport company",
+    "name": "OpenAI art generator",
+    "description": "This is a simple art generator app",
     "stack": ["React","HTML","CSS"],
-    "image": "../../assets/profileCard/ProfileIcon.png"
+    "image": "/projectImages/artGenerator.png"
   },
   {
-    "name": "Parcel Plus",
-    "description": "SPA made for a logistics & transport company",
+    "name": "Dynamic presentation card",
+    "description": "Presentation card generator",
     "stack": ["React","HTML","CSS"],
-    "image": "../../assets/profileCard/ProfileIcon.png"
+    "image": "/projectImages/Presentation_card.png"
   }
 ]
