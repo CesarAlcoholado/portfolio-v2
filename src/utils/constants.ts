@@ -8,6 +8,9 @@ import rain from "../assets/weatherIcons/rain.png";
 import snow from "../assets/weatherIcons/snow.png";
 import wind from "../assets/weatherIcons/wind.png";
 
+
+//? ********** Weather **********
+
   export const svgColor: SvgColor = {
     light: "#6a7282",
     dark: "#eeeeee",
@@ -18,7 +21,7 @@ import wind from "../assets/weatherIcons/wind.png";
   "few clouds": cloud,
   "scattered clouds": cloud,
   "broken clouds": cloud,
-  "shower rain": drizzle, //drizle
+  "shower rain": drizzle,
   "rain": rain,
   "thunderstorm": rain,
   "snow": snow,
@@ -27,3 +30,11 @@ import wind from "../assets/weatherIcons/wind.png";
   "humidity": humidity,
   undefined: ""
 }
+
+//? ********** Weather **********
+
+//? ********** Projects **********
+
+
+
+//? ********** Weather **********

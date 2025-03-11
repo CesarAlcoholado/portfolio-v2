@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Parcel Plus",
+    "description": "SPA made for a logistics & transport company",
+    "stack": ["React","HTML","CSS"],
+    "image": "../../assets/profileCard/ProfileIcon.png"
+  },
+  {
+    "name": "Parcel Plus",
+    "description": "SPA made for a logistics & transport company",
+    "stack": ["React","HTML","CSS"],
+    "image": "../../assets/profileCard/ProfileIcon.png"
+  },
+  {
+    "name": "Parcel Plus",
+    "description": "SPA made for a logistics & transport company",
+    "stack": ["React","HTML","CSS"],
+    "image": "../../assets/profileCard/ProfileIcon.png"
+  },
+  {
+    "name": "Parcel Plus",
+    "description": "SPA made for a logistics & transport company",
+    "stack": ["React","HTML","CSS"],
+    "image": "../../assets/profileCard/ProfileIcon.png"
+  },
+  {
+    "name": "Parcel Plus",
+    "description": "SPA made for a logistics & transport company",
+    "stack": ["React","HTML","CSS"],
+    "image": "../../assets/profileCard/ProfileIcon.png"
+  },
+  {
+    "name": "Parcel Plus",
+    "description": "SPA made for a logistics & transport company",
+    "stack": ["React","HTML","CSS"],
+    "image": "../../assets/profileCard/ProfileIcon.png"
+  }
+]
