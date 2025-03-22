@@ -8,7 +8,7 @@ export const Github = () => {
   return (
     <div className="w-full col-span-2 h-auto rounded-md bg-cardLight border-borderLight border-4 border-solid dark:bg-backgroundDark dark:border-borderDark shadow-sm shadow-gray-900/5">
       <div className="w-auto flex flex-col gap-2 justify-center items-center border-gray-100 rounded-md border-[1px] dark:border-gray-800  overflow-hidden p-6">
-        <p className="text-3xl text-gray-500 dark:text-gray-200 font-medium">
+        <p className="text-3xl text-gray-500 dark:text-gray-200 font-medium font-firaSans">
           GITHUB
         </p>
         <GitHubCalendar

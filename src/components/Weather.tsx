@@ -46,7 +46,7 @@ export const Weather = () => {
             {/* {fhToCelsius(weather?.main.temp)} */}
             {weather?.main.temp.toFixed(1)} ℃
           </p>
-           <span className="flex text-[12px] text-gray-500 dark:text-gray-200 gap-2 text-center">{weather?.weather[0].description}</span>
+           <span className="flex text-[12px] text-gray-500 dark:text-gray-200 gap-2 text-center font-firaSans">{weather?.weather[0].description}</span>
           {/* <LazyLoadImage src={weather?.weather[0].description ? weatherIcon[weather?.weather[0].description] : ""} className="w-10 h-10"/> */}
         {/* </div> */}
       </div>

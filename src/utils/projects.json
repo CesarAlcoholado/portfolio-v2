@@ -3,36 +3,46 @@
     "name": "Parcel Plus",
     "description": "SPA made for a logistics & transport company",
     "stack": ["React","HTML","CSS"],
-    "image": "/projectImages/ParcelPlus.jpg"
+    "image": "/projectImages/ParcelPlus.jpg",
+    "repo": true,
+    "link": ""
   },
   {
     "name": "Digital Menu",
     "description": "Web app for ordering food by scanning a QrCode",
     "stack": ["React", "Redux", "HTML","CSS", "SASS"],
-    "image": "/projectImages/ImenuClient.jpg"
+    "image": "/projectImages/ImenuClient.jpg",
+    "repo": false
   },
   {
     "name": "Commerce Dashboard",
     "description": "Web app made for food orders managment",
     "stack": ["React", "Redux", "HTML","CSS", "SASS"],
-    "image": "/projectImages/ImenuAdmin.jpg"
+    "image": "/projectImages/ImenuAdmin.jpg",
+    "repo": false
   },
   {
     "name": "Maps app",
     "description": "Interactive map for calculating routes and distances",
     "stack": ["React","Typescript", "HTML","CSS"],
-    "image": "/projectImages/MapsApp.png"
+    "image": "/projectImages/MapsApp.png",
+    "repo": true,
+    "link": ""
   },
   {
     "name": "OpenAI art generator",
     "description": "This is a simple art generator app",
-    "stack": ["React","HTML","CSS"],
-    "image": "/projectImages/artGenerator.png"
+    "stack": ["React","HTML","CSS", "Tailwind"],
+    "image": "/projectImages/artGenerator.png",
+    "repo": true,
+    "link": ""
   },
   {
     "name": "Dynamic presentation card",
     "description": "Presentation card generator",
     "stack": ["React","HTML","CSS"],
-    "image": "/projectImages/Presentation_card.png"
+    "image": "/projectImages/Presentation_card.png",
+    "repo": true,
+    "link": ""
   }
 ]

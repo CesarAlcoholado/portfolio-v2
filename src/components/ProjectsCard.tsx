@@ -26,7 +26,7 @@ export const ProjectsCard = () => {
           </span>
         </div>
         <p className="text-2xl text-gray-500 dark:text-gray-200">PROJECTS</p>
-        <span className="text-[12px] text-gray-500 dark:text-gray-200">take a look »»</span>
+        <span className="text-[12px] text-gray-500 dark:text-gray-200 font-firaSans">take a look »»</span>
       </div>
     </div>
   );

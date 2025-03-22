@@ -43,7 +43,7 @@ export const Profile = () => {
           src={Simon}
           className="w-32 h-28 rounded-md shadow-sm shadow-gray-900/5 mt-2.5 mb-2.5 border-[1px] dark:border-gray-800"
         />
-        <p className="text-md text-gray-500 font-medium dark:text-gray-200">
+        <p className="text-md text-gray-500 font-medium dark:text-gray-200 font-firaSans">
           Hi! I'm{" "}
           <span className="text-md text-blue-400 dark:text-gray-50 font-bold">
             César
@@ -88,7 +88,7 @@ export const Profile = () => {
             />
           </svg>
         </h4>
-        <ul className="flex flex-col">
+        <ul className="flex flex-col font-firaSans">
           <li className="text-md text-blue-500 font-bold">
             •
             <span className="text-md text-gray-700 font-light dark:text-gray-200 ml-3">

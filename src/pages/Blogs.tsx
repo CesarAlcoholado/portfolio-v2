@@ -1,17 +1,15 @@
-import { NavBar } from "../components/NavBar";
 
 export const Blogs = () => {
   return (
     <>
-    <NavBar/>
-    <section className="px-6 mx-auto">
-      <p className="mt-12 mb-12 text-3xl text-center dark:text-black">
-        Hello and welcome 👋🏻 &nbsp;
-        <span className="whitespace-nowrap">
+      <section className="px-6 mx-auto">
+        <p className=" mt-12 mb-5 text-3xl text-gray-500 dark:text-gray-200">
+          Learning React 👋🏻 &nbsp;
+        </p>
+        <p className="text-lg whitespace-nowrap text-gray-500 dark:text-gray-200">
           I&apos;m <span className="font-bold">Cesar</span>
-        </span>
-      </p>
-    </section>
+        </p>
+      </section>
     </>
   );
 }
