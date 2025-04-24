@@ -34,3 +34,57 @@
   --border-light: rgb(255 255 255); */
   background-color: rgb(249 250 251)
 }
+
+/******** Grid Areas ********/
+
+.grid-tablet-layout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Ejemplo de 3 columnas */
+  grid-template-rows: auto;   /* Ejemplo de 3 filas automáticas */
+  grid-template-areas:
+    "navbar navbar"
+    "profile mode"
+    "profile language"
+    "profile mode"
+    "location location"
+    "blog blog"
+    "projects whatiuse"
+    "projects whatiuse"
+    "weather whatiuse"
+    "weather whatiuse";
+}
+
+.grid-navbar {
+  grid-area: navbar;
+}
+
+.grid-profile {
+  grid-area: profile;
+}
+
+.grid-mode {
+  grid-area: mode;
+}
+
+.grid-language {
+  grid-area: language;
+}
+
+.grid-location {
+  grid-area: location;
+}
+
+.grid-blog {
+  grid-area: blog;
+}
+
+.grid-projects {
+  grid-area: projects
+}
+
+.grid-whatiuse {
+  grid-area: whatiuse;
+}
+.grid-wheather {
+  grid-area: wheather;
+}

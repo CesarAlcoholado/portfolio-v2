@@ -10,24 +10,12 @@ import { ProjectsCard } from "../components/ProjectsCard";
 import { Stack } from "../components/Stack";
 import { Twitter } from "../components/Twitter";
 import { Weather } from "../components/Weather";
+import '../index.css'
 
 export const Home = () => {
 
-  // interface Bg {
-  //   [key: string]: string,
-  // }
-
-  // const background: Bg  = {
-  //   "dark": "bg-cardDark",
-  //   "light": "bg-cardLight"
-  // }
-
-  // const toggleMode = ()=> {
-  //   document.body.classList.add("dark")
-  // }
-
   return (
-    <div className="grid grid-cols-2 w-auto gap-2.5 h-auto place-items-center m-1.5 font-montserrat">
+    <div className="grid grid-cols-2 w-auto gap-2.5 h-auto place-items-center m-1.5 font-montserrat sm:grid-tablet-layout">
       <Profile/>
       <Language/>
       <Mode/>

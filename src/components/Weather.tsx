@@ -23,7 +23,7 @@ export const Weather = () => {
     }, []);
 
   return (
-    <div className="w-full h-[130px] rounded-md bg-cardLight border-borderLight border-4 border-solid dark:bg-backgroundDark dark:border-borderDark shadow-sm shadow-gray-900/5">
+    <div className="w-full h-[130px] rounded-md bg-cardLight border-borderLight border-4 border-solid dark:bg-backgroundDark dark:border-borderDark shadow-sm shadow-gray-900/5 sm:hidden">
       <div className="h-full w-full border-gray-100 rounded-md border-[1px] flex flex-col justify-center items-center gap-1.5 p-2 dark:border-gray-800">
         <span className="flex text-[12px] text-gray-500 dark:text-gray-200 gap-2">
           <svg
