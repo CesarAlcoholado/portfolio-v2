@@ -45,7 +45,7 @@
     "navbar navbar"
     "profile mode"
     "profile language"
-    "profile mode"
+    "profile  random"
     "location location"
     "blog blog"
     "projects whatiuse"
@@ -68,6 +68,10 @@
 
 .grid-language {
   grid-area: language;
+}
+
+.grid-random {
+  grid-area: random
 }
 
 .grid-location {

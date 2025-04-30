@@ -119,14 +119,14 @@ export const Profile = () => {
         </div>
       </div>
       <div className="hidden sm:grid-profile relative w-full h-[504px] sm:flex flex-col gap-2 rounded-2xl bg-cardLight dark:bg-backgroundDark p-1">
-        <div className="w-full h-[250px] rounded-md bg-cardLight dark:bg-red-400 border-borderLight border-4 border-solid dark:bg-backgroundDark dark:border-borderDark "></div>
+        <div className="w-full h-[250px] rounded-md bg-cardLight border-borderLight border-4 border-solid dark:bg-backgroundDark dark:border-borderDark "></div>
         <div className="absolute flex justify-center items-center rounded-full w-[260px] h-[260px] bg-cardLight dark:bg-backgroundDark transform top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
           <LazyLoadImage
             src={Simon}
             className="rounded-full w-[240px] h-[240px]"
           />
         </div>
-        <div className="w-full h-[250px] rounded-md bg-cardLight dark:bg-red-400 border-borderLight border-4 border-solid dark:bg-backgroundDark dark:border-borderDark"></div>
+        <div className="w-full h-[250px] rounded-md bg-cardLight border-borderLight border-4 border-solid dark:bg-backgroundDark dark:border-borderDark"></div>
       </div>
     </>
   );

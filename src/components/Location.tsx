@@ -1,7 +1,7 @@
 
 export const Location = () => {
   return (
-    <div className="w-full h-[200px] col-span-2 rounded-md bg-cardLight border-borderLight border-4 border-solid dark:bg-cardDark dark:border-borderDark shadow-sm shadow-gray-900/5 sm:hidden">
+    <div className="w-full h-[200px] col-span-2 rounded-md bg-cardLight border-borderLight border-4 border-solid dark:bg-cardDark dark:border-borderDark shadow-sm shadow-gray-900/5 sm:grid-location">
       <div className="relative h-full w-full border-gray-100 rounded-md border-[1px] flex flex-col justify-center items-center gap-1.5 p-2 dark:border-gray-800 ">
         <span className="text-[12px] text-gray-700 dark:text-gray-200 z-10">
           location
