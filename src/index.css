@@ -40,7 +40,7 @@
 .grid-tablet-layout {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Ejemplo de 3 columnas */
-  grid-template-rows: auto auto auto auto auto auto auto auto auto auto;   /* Ejemplo de 3 filas automáticas */
+  grid-template-rows: auto auto auto auto auto auto auto auto auto auto;   /* Ejemplo de filas automáticas */
   grid-template-areas:
     "navbar navbar"
     "profile mode"
