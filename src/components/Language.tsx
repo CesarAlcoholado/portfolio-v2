@@ -1,5 +1,6 @@
 import { usePortfolioContext } from "../context/PortfolioContext";
 import { svgColor } from "../utils/constants"
+import '../index.css'
 
 export const Language = () => {
   const { theme } = usePortfolioContext()

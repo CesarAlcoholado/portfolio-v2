@@ -7,6 +7,7 @@ import { Location } from "../components/Location";
 import { Mode } from "../components/Mode";
 import { Profile } from "../components/Profile";
 import { ProjectsCard } from "../components/ProjectsCard";
+import { Random } from "../components/Random";
 import { Stack } from "../components/Stack";
 import { Twitter } from "../components/Twitter";
 import { Weather } from "../components/Weather";
@@ -17,8 +18,9 @@ export const Home = () => {
   return (
     <div className="grid grid-cols-2 w-auto gap-2.5 h-auto place-items-center m-1.5 font-montserrat sm:grid-tablet-layout">
       <Profile/>
-      <Language/>
       <Mode/>
+      <Language/>
+      <Random/>
       <Location/>
       <BlogCard/>
       <Weather/>

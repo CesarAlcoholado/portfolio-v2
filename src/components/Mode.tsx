@@ -1,13 +1,14 @@
 
 import { usePortfolioContext } from "../context/PortfolioContext"
 import { svgColor } from "../utils/constants";
+import "../index.css"
 
 export const Mode = () => {
   const { theme, toggleMode } = usePortfolioContext()
 
   return (
     <div
-      className="w-full h-[130px] rounded-md bg-cardLight border-borderLight border-4 border-solid dark:bg-backgroundDark dark:border-borderDark shadow-sm shadow-gray-900/5 sm:grid-mode"
+      className="w-full h-[130px] rounded-md bg-cardLight border-borderLight border-4 border-solid dark:bg-backgroundDark dark:border-borderDark shadow-sm shadow-gray-900/5 sm:grid-mode sm:h-full"
       onClick={toggleMode}
     >
       <div className="h-full w-full border-gray-100 rounded-md border-[1px] flex flex-col justify-center items-center p-2 dark:border-gray-800">
