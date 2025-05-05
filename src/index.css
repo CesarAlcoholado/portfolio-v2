@@ -39,12 +39,12 @@
 
 .grid-tablet-layout {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Ejemplo de 3 columnas */
+  grid-template-columns: repeat(2, 1fr); /* Ejemplo de 2 columnas */
   grid-template-rows: auto auto auto auto auto auto auto auto auto auto;   /* Ejemplo de filas automáticas */
   grid-template-areas:
     "navbar navbar"
     "profile mode"
-    "profile mode"
+    "profile email"
     "profile language"
     "location location"
     "blog blog"
@@ -70,8 +70,8 @@
   grid-area: language;
 }
 
-.grid-random {
-  grid-area: random
+.grid-email {
+  grid-area: email
 }
 
 .grid-location {
