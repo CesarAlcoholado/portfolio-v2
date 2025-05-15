@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 @custom-variant dark (&:where(.dark, .dark *));
@@ -18,7 +18,7 @@
   --color-borderDark: rgb(54 65 79);
   --color-borderLight: rgb(255 255 255);
   --font-montserrat: "Montserrat";
-  --font-firaSans: Fira Sans
+  --font-firaSans: Fira Sans;
 }
 
 .dark {
@@ -32,7 +32,7 @@
   /* --background-light: rgb(249 250 251);
   --card-light: rgb(249 250 251);
   --border-light: rgb(255 255 255); */
-  background-color: rgb(249 250 251)
+  background-color: rgb(249 250 251);
 }
 
 /******** Grid Areas ********/
@@ -40,7 +40,7 @@
 .grid-tablet-layout {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Ejemplo de 2 columnas */
-  grid-template-rows: auto auto auto auto auto auto auto auto auto auto;   /* Ejemplo de filas automáticas */
+  grid-template-rows: auto auto auto auto auto auto auto auto auto auto; /* Ejemplo de filas automáticas */
   grid-template-areas:
     "navbar navbar"
     "profile mode"
@@ -51,7 +51,9 @@
     "projects whatiuse"
     "projects whatiuse"
     "weather whatiuse"
-    "weather whatiuse";
+    "weather whatiuse"
+    "github github"
+    "twitter linkedin";
 }
 
 .grid-navbar {
@@ -71,7 +73,7 @@
 }
 
 .grid-email {
-  grid-area: email
+  grid-area: email;
 }
 
 .grid-location {
@@ -83,12 +85,25 @@
 }
 
 .grid-projects {
-  grid-area: projects
+  grid-area: projects;
 }
 
 .grid-whatiuse {
   grid-area: whatiuse;
 }
+
 .grid-wheather {
   grid-area: wheather;
+}
+
+.grid-github {
+  grid-area: github;
+}
+
+.grid-linkedin {
+  grid-area: linkedin;
+}
+
+.grid-twitter {
+  grid-area: twitter;
 }
