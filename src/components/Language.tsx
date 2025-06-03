@@ -8,16 +8,16 @@ export const Language = () => {
   return (
     <div className="w-full h-[130px] rounded-md bg-cardLight border-borderLight border-4 border-solid dark:bg-backgroundDark dark:border-borderDark shadow-sm shadow-gray-900/5 sm:grid-language sm:h-full sm:row-start-2 sm:row-end-3">
       <div className="h-full w-full border-gray-100 rounded-md border-[1px] flex flex-col justify-center items-center p-2 dark:border-gray-800">
-        <span className="text-[12px] text-gray-500 dark:text-gray-200">
+        <span className="text-xs font-firaSans text-gray-500 dark:text-gray-200 md:text-base">
           LANG.
         </span>
-        <p className="flex gap-1 text-2xl text-gray-500 font-medium dark:text-gray-200">
+        <p className="flex gap-1 text-2xl text-gray-500 font-medium dark:text-gray-200 md:text-3xl">
           <svg
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke={`${svgColor[theme]}`}
-            width={"28px"}
+            className="w-7 md:w-8"
           >
             <path
               strokeLinecap="round"

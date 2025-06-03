@@ -12,10 +12,10 @@ export const Mode = () => {
       onClick={toggleMode}
     >
       <div className="h-full w-full border-gray-100 rounded-md border-[1px] flex flex-col justify-center items-center p-2 dark:border-gray-800">
-        <span className="text-[12px] text-gray-500 dark:text-gray-200">
-          {theme}
+        <span className="text-xs font-firaSans text-gray-500 dark:text-gray-200 md:text-base">
+          {theme.toUpperCase()}
         </span>
-        <p className="flex text-2xl text-gray-500 font-medium dark:text-gray-200 gap-2">
+        <p className="flex text-2xl text-gray-500 font-medium dark:text-gray-200 gap-2 md:text-3xl">
           MODE
           {theme == "dark" ? (
             <svg
@@ -23,7 +23,7 @@ export const Mode = () => {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke={`${svgColor[theme]}`}
-              width={"28px"}
+              className="w-7 md:w-8"
             >
               <path
                 strokeLinecap="round"
@@ -37,7 +37,7 @@ export const Mode = () => {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke={`${svgColor[theme]}`}
-              width={"28px"}
+              className="w-7 md:w-8"
             >
               <path
                 strokeLinecap="round"

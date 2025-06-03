@@ -1,27 +1,56 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { TypingEffect } from "./Typing-effect";
-import {motion, useAnimate, useInView} from 'framer-motion'
+import {
+  motion,
+  useAnimate,
+  useInView,
+} from "framer-motion";
+import { useMediaQuery } from "react-responsive";
 
 export const BlogCard = () => {
+  const [scope, animate] = useAnimate();
+  // const isInView = useInView(scope);
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
 
-      const [scope, animate] = useAnimate();
-      const isInView = useInView(scope);
+  // 1. Define tus breakpoints con useMediaQuery
+  // Ajusta estos valores según tus breakpoints de Tailwind o tus necesidades
+  const isMobile = useMediaQuery({query: "(max-width: 767px)"}); // Ejemplo: hasta 767px es mobile
+  const isTablet = useMediaQuery({query: "(min-width: 768px) and (max-width: 1023px)"}); 
+  // Ejemplo: de 768px a 1023px es tablet
+  const isDesktop = useMediaQuery({query: "(min-width: 1024px)"}); // Ejemplo: de 1024px en adelante es desktop
 
-      useEffect(() => {
-        if (isInView) {
-          animate(scope.current, { opacity: 1 });
-        }
-      }, [isInView]);
+  // 2. Define la lógica condicional para el valor 'y' de la animación
+  let yValue = 0; // Valor por defecto (ej. para desktop o si no hay match)
+
+  if (isMobile) {
+    yValue = -100; // Desplazamiento para mobile
+  } else if (isTablet) {
+    yValue = -150; // Desplazamiento para tablet
+  } else if (isDesktop) {
+    yValue = -300; // Desplazamiento para desktop (o cualquier otro valor)
+  }
+
+  // 3. Construye el objeto de animación
+  const animationProps = isInView ? { y: yValue } : { y: 0 }; // Puedes ajustar el 'initial' si prefieres
+
+  useEffect(() => {
+    if (isInView) {
+      animate(scope.current, { opacity: 1 });
+    }
+  }, [isInView]);
 
   return (
     <div
       ref={scope}
-      className="w-full h-[130px] col-span-2 rounded-md bg-cardLight border-borderLight border-4 border-solid dark:bg-backgroundDark dark:border-borderDark shadow-sm shadow-gray-900/5 sm:grid-blog sm:h-[250px]"
+      className="w-full h-[130px] col-span-2 rounded-md bg-cardLight border-borderLight border-4 border-solid dark:bg-backgroundDark dark:border-borderDark shadow-sm shadow-gray-900/5 sm:grid-blog sm:h-[220px]"
     >
       <div className="relative h-full w-full border-gray-100 rounded-md border-[1px] flex flex-col justify-center items-center gap-1.5 p-4 pb-0 dark:border-gray-800 box-border overflow-hidden">
         <motion.div
-          className="absolute flex flex-col items-center w-[330px] h-full pt-2.5 pl-10 pr-10 border-solid border-blue-400 border-[1px] border-b-0 bottom-[-100%] shadow-[5px_5px_0px_0px_rgba(81,_162,_255,_1)]"
-          animate={isInView ? { y: -200 } : ""}
+          ref={ref}
+          className="absolute flex flex-col items-center w-[330px] h-full pt-2.5 px-10 md:w-[430px] border-solid border-blue-400 border-[1px] border-b-0 bottom-[-100%] shadow-[5px_5px_0px_0px_rgba(81,_162,_255,_1)] md:shadow-[10px_10px_0px_0px_rgba(81,_162,_255,_1)]"
+          // animate={isInView ? { y: -100 } : ""}
+          animate={animationProps}
           transition={{ delay: 0.3, duration: 0.5 }}
         >
           <div className="absolute w-[100%] h-full top-[-10px]">
@@ -30,7 +59,7 @@ export const BlogCard = () => {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="#51A2FF"
-              width={"30px"}
+              className="w-8 md:w-11"
             >
               <path
                 strokeLinecap="round"
@@ -39,14 +68,14 @@ export const BlogCard = () => {
               />
             </svg>
           </div>
-          <span className="flex text-[12px] text-gray-500 dark:text-gray-200 gap-1 m-2">
-            Blog
+          <span className="flex text-xs font-firaSans text-gray-500 dark:text-gray-200 gap-1 m-2 md:text-base">
+            BLOG
             <svg
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="#51A2FF"
-              width={"12px"}
+              className="w-3 md:w-4"
             >
               <path
                 strokeLinecap="round"
