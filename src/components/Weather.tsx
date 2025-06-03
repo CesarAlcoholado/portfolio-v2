@@ -25,13 +25,13 @@ export const Weather = () => {
   return (
     <div className="w-full h-[130px] rounded-md bg-cardLight border-borderLight border-4 border-solid dark:bg-backgroundDark dark:border-borderDark shadow-sm shadow-gray-900/5 sm:grid-area-weather sm:row-start-8 sm:row-end-10">
       <div className="h-full w-full border-gray-100 rounded-md border-[1px] flex flex-col justify-center items-center gap-1.5 p-2 dark:border-gray-800">
-        <span className="flex text-[12px] text-gray-500 dark:text-gray-200 gap-2">
+        <span className="flex text-xs font-firaSans text-gray-500 dark:text-gray-200 gap-2 md:text-base">
           <svg
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke={`${svgColor[theme]}`}
-            width={"16px"}
+            className="w-4 md:w-5"
           >
             <path
               strokeLinecap="round"
@@ -46,7 +46,7 @@ export const Weather = () => {
           {/* {fhToCelsius(weather?.main.temp)} */}
           {weather?.main.temp.toFixed(1)} ℃
         </p>
-        <span className="flex text-[12px] text-gray-500 dark:text-gray-200 gap-2 text-center font-firaSans">
+        <span className="flex text-xs text-gray-500 dark:text-gray-200 gap-2 text-center font-firaSans md:text-base">
           {weather?.weather[0].description}
         </span>
         {/* <LazyLoadImage src={weather?.weather[0].description ? weatherIcon[weather?.weather[0].description] : ""} className="w-10 h-10"/> */}

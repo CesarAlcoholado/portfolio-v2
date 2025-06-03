@@ -12,7 +12,7 @@ export const ProjectsCard = () => {
             WORK
           </span>
         </div>
-        <p className="text-2xl flex gap-2 text-gray-500 dark:text-gray-200 md:text-3xl">
+        <p className="text-2xl flex gap-2 font-medium text-gray-500 dark:text-gray-200 md:text-3xl">
           <svg
             fill="none"
             viewBox="0 0 24 24"
@@ -26,7 +26,7 @@ export const ProjectsCard = () => {
               d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"
             />
           </svg>
-           PROJECTS
+          PROJECTS
         </p>
         <span className="text-xs font-firaSans text-gray-500 dark:text-gray-200 md:text-base">
           take a look »»

@@ -20,7 +20,6 @@ export const Home = () => {
       <Profile/>
       <Mode/>
       <Language/>
-      <Random/>
       <Location/>
       <BlogCard/>
       <Weather/>

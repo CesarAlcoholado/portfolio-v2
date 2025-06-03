@@ -8,7 +8,7 @@ export const Linkedin = () => {
   return (
     <div className="w-full h-[80px] col-span-2 rounded-md bg-cardLight border-borderLight border-4 border-solid dark:bg-backgroundDark dark:border-borderDark shadow-sm shadow-gray-900/5 sm:row-start-11 sm:row-end-12 sm:col-span-1 sm:h-[130px]">
       <div className="h-full w-full border-gray-100 rounded-md border-[1px] flex flex-col justify-center items-center gap-1.5 p-2 dark:border-gray-800">
-        <p className="flex gap-2.5 text-3xl text-gray-500 dark:text-gray-200">
+        <p className="flex gap-2.5 text-3xl font-medium text-gray-500 dark:text-gray-200">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 448 512"
