@@ -7,7 +7,6 @@ import { Location } from "../components/Location";
 import { Mode } from "../components/Mode";
 import { Profile } from "../components/Profile";
 import { ProjectsCard } from "../components/ProjectsCard";
-import { Random } from "../components/Random";
 import { Stack } from "../components/Stack";
 import { Twitter } from "../components/Twitter";
 import { Weather } from "../components/Weather";

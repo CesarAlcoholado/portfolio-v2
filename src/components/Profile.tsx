@@ -120,7 +120,7 @@ export const Profile = () => {
         </div>
       </div>
       <div className="hidden sm:grid-profile relative w-full h-[100%] sm:flex flex-col gap-2 rounded-2xl bg-cardLight dark:bg-backgroundDark sm:row-start-1 sm:row-end-4 p-0">
-        <div className="w-full h-[250px] rounded-md bg-cardLight border-borderLight border-4 border-solid dark:bg-backgroundDark dark:border-borderDark p-2">
+        <div className="w-full h-[250px] rounded-md bg-cardLight border-borderLight border-4 border-solid dark:bg-backgroundDark dark:border-borderDark p-3">
           <div className="flex w-full justify-between">
             <h4 className="text-lg text-gray-500 font-medium dark:text-gray-200 font-montserrat">
               ABOUT ME
@@ -150,7 +150,7 @@ export const Profile = () => {
               </svg>
             </div>
           </div>
-          <p className="text-md text-gray-500 font-medium dark:text-gray-200 font-firaSans md:text-base mt-1.5">
+          <p className="text-md text-gray-500 font-medium dark:text-gray-200 font-firaSans md:text-base mt-2.5">
             Hi! I'm{" "}
             <span className="text-md text-blue-400 dark:text-gray-50 font-bold md:text-base">
               César
@@ -180,13 +180,13 @@ export const Profile = () => {
             </span>
           </p>
         </div>
-        <div className="absolute flex justify-center items-center rounded-full w-[260px] h-[260px] bg-cardLight dark:bg-backgroundDark transform top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+        <div className="absolute flex justify-center items-center rounded-full w-[250px] h-[250px] bg-cardLight dark:bg-backgroundDark transform top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
           <LazyLoadImage
             src={Simon}
             className="rounded-full w-[230px] h-[230px]"
           />
         </div>
-        <div className="w-full h-[250px] rounded-md bg-cardLight border-borderLight border-4 border-solid dark:bg-backgroundDark dark:border-borderDark p-2">
+        <div className="w-full h-[250px] rounded-md bg-cardLight border-borderLight border-4 border-solid dark:bg-backgroundDark dark:border-borderDark p-3">
           <div className="h-full w-full flex flex-col justify-end">
             <h4 className="flex text-lg/tight text-gray-400 font-medium dark:text-gray-300 gap-2 align-baseline">
               CURIOUS FACTS
