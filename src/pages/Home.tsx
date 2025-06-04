@@ -15,7 +15,7 @@ import '../index.css'
 export const Home = () => {
 
   return (
-    <div className="grid grid-cols-2 w-auto gap-2.5 h-auto place-items-center m-1.5 font-montserrat sm:grid-tablet-layout">
+    <div className="grid grid-cols-2 w-auto gap-2.5 h-auto place-items-center m-1.5 font-montserrat lg:grid-cols-4">
       <Profile/>
       <Mode/>
       <Language/>

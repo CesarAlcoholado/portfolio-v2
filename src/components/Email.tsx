@@ -6,7 +6,7 @@ export const Email = () => {
   const { theme } = usePortfolioContext()
 
   return (
-    <div className="w-full h-[80px] col-span-2 rounded-md bg-cardLight border-borderLight border-4 border-solid dark:bg-backgroundDark dark:border-borderDark shadow-sm shadow-gray-900/5 sm:grid-email sm:h-full sm:row-start-3 sm:row-end-4 sm:col-start-2 sm:col-end-3">
+    <div className="w-full h-[80px] col-span-2 rounded-md bg-cardLight border-borderLight border-4 border-solid dark:bg-backgroundDark dark:border-borderDark shadow-sm shadow-gray-900/5 md:grid-email md:h-full md:row-start-3 md:row-end-4 md:col-start-2 md:col-end-3">
       <div className="h-full w-full border-gray-100 rounded-md border-[1px] flex flex-col justify-center items-center p-2 dark:border-gray-800">
       <span className="text-xs font-firaSans text-gray-500 dark:text-gray-200 md:text-base">CONTACT</span>
         <p className="flex gap-2.5 text-2xl font-medium text-gray-500 dark:text-gray-200 md:text-3xl">
