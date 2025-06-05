@@ -15,19 +15,19 @@ import '../index.css'
 export const Home = () => {
 
   return (
-    <div className="grid grid-cols-2 w-auto gap-2.5 h-auto place-items-center m-1.5 font-montserrat lg:grid-cols-4">
-      <Profile/>
-      <Mode/>
-      <Language/>
-      <Location/>
-      <BlogCard/>
-      <Weather/>
-      <ProjectsCard/>
-      <Stack/>
-      <Twitter/>
-      <Linkedin/>
-      <Email/>
-      <Github/>
+    <div className="grid grid-cols-2 w-auto gap-2.5 h-auto place-items-center m-1.5 font-montserrat lg:[min-content_1fr_1fr] xl:[min-content_1fr_1fr_1fr]">
+      <Profile />
+      <Mode />
+      <Language />
+      <Location />
+      <BlogCard />
+      <Weather />
+      <ProjectsCard />
+      <Stack />
+      <Twitter />
+      <Linkedin />
+      <Email />
+      <Github />
     </div>
   );
 }

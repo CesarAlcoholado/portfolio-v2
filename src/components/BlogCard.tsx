@@ -28,7 +28,7 @@ export const BlogCard = () => {
   } else if (isTablet) {
     yValue = -150; // Desplazamiento para tablet
   } else if (isDesktop) {
-    yValue = -300; // Desplazamiento para desktop (o cualquier otro valor)
+    yValue = -250; // Desplazamiento para desktop (o cualquier otro valor)
   }
 
   // 3. Construye el objeto de animación
@@ -43,12 +43,12 @@ export const BlogCard = () => {
   return (
     <div
       ref={scope}
-      className="w-full h-[130px] col-span-2 rounded-md bg-cardLight border-borderLight border-4 border-solid dark:bg-backgroundDark dark:border-borderDark shadow-sm shadow-gray-900/5 sm:grid-blog sm:h-[220px]"
+      className="w-full h-[130px] col-span-2 rounded-md bg-cardLight border-borderLight border-4 border-solid dark:bg-backgroundDark dark:border-borderDark shadow-sm shadow-gray-900/5 sm:grid-blog sm:h-[220px] lg:col-start-1 lg:col-end-2 lg:row-start-5 lg:row-end-7 lg:h-full"
     >
       <div className="relative h-full w-full border-gray-100 rounded-md border-[1px] flex flex-col justify-center items-center gap-1.5 p-4 pb-0 dark:border-gray-800 box-border overflow-hidden">
         <motion.div
           ref={ref}
-          className="absolute flex flex-col items-center w-[330px] h-full pt-2.5 px-10 md:w-[430px] border-solid border-blue-400 border-[1px] border-b-0 bottom-[-100%] shadow-[5px_5px_0px_0px_rgba(81,_162,_255,_1)] md:shadow-[10px_10px_0px_0px_rgba(81,_162,_255,_1)]"
+          className="absolute flex flex-col items-center w-[330px] h-full pt-2.5 px-10 md:w-[80%] border-solid border-blue-400 border-[1px] border-b-0 bottom-[-100%] shadow-[5px_5px_0px_0px_rgba(81,_162,_255,_1)] md:shadow-[10px_10px_0px_0px_rgba(81,_162,_255,_1)] lg:h-[200px] "
           // animate={isInView ? { y: -100 } : ""}
           animate={animationProps}
           transition={{ delay: 0.3, duration: 0.5 }}
