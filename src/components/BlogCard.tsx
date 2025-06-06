@@ -43,7 +43,7 @@ export const BlogCard = () => {
   return (
     <div
       ref={scope}
-      className="w-full h-[130px] col-span-2 rounded-md bg-cardLight border-borderLight border-4 border-solid dark:bg-backgroundDark dark:border-borderDark shadow-sm shadow-gray-900/5 sm:grid-blog sm:h-[220px] lg:col-start-1 lg:col-end-2 lg:row-start-5 lg:row-end-7 lg:h-full"
+      className="w-full h-[130px] col-span-2 rounded-md bg-cardLight border-borderLight border-4 border-solid dark:bg-backgroundDark dark:border-borderDark shadow-sm shadow-gray-900/5 sm:grid-blog sm:h-[220px] lg:col-start-1 lg:col-end-2 lg:row-start-5 lg:row-end-7 lg:h-full xl:col-start-1 xl:col-end-2 xl:row-start-4 xl:row-end-5"
     >
       <div className="relative h-full w-full border-gray-100 rounded-md border-[1px] flex flex-col justify-center items-center gap-1.5 p-4 pb-0 dark:border-gray-800 box-border overflow-hidden">
         <motion.div

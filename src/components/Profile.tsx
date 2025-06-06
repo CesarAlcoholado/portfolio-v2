@@ -13,7 +13,7 @@ export const Profile = () => {
 
   return (
     <>
-      {isMobile ? <Profile_MobileView/> : <div className="md:grid-profile relative w-full h-[100%] md:flex flex-col gap-2 rounded-2xl bg-cardLight dark:bg-backgroundDark md:row-start-1 md:row-end-4 p-0 lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-4 lg:w-full xl:max-w-[530px] xl:max-h-[620px] xl:col-start-1 xl:col-end-2">
+      {isMobile ? <Profile_MobileView/> : <div className="md:grid-profile relative w-full h-[100%] md:flex flex-col gap-2 rounded-2xl bg-cardLight dark:bg-backgroundDark md:row-start-1 md:row-end-4 p-0 lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-4 lg:w-full xl:max-w-[530px] xl:min-h-[580px] xl:col-start-1 xl:col-end-2 xl:row-start-1 xl:row-end-3">
         <div className="w-full h-[250px] rounded-md bg-cardLight border-borderLight border-4 border-solid dark:bg-backgroundDark dark:border-borderDark p-3 xl:h-full">
           <div className="flex w-full justify-between">
             <h4 className="text-lg text-gray-500 font-medium dark:text-gray-200 font-montserrat">
