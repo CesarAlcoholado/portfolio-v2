@@ -5,7 +5,7 @@ export const Stack = () => {
   const { theme } = usePortfolioContext();
 
   return (
-    <div className="col-span-2 w-full h-[250px] rounded-md bg-cardLight border-borderLight border-4 border-solid dark:bg-backgroundDark dark:border-borderDark shadow-sm shadow-gray-900/5 sm:grid-whatiuse sm:row-start-6 sm:row-end-10 sm:h-full sm:col-span-1 lg:col-start-2 lg:col-end-4 lg:row-start-4 lg:row-end-5">
+    <div className="col-span-2 w-full h-[250px] rounded-md bg-cardLight border-borderLight border-4 border-solid dark:bg-backgroundDark dark:border-borderDark shadow-sm shadow-gray-900/5 sm:grid-whatiuse sm:row-start-6 sm:row-end-10 sm:h-full sm:col-span-1 lg:col-start-2 lg:col-end-3 lg:row-start-5 lg:row-end-7 xl:col-start-2 xl:col-end-4 xl:row-start-4 xl:row-end-5">
       <div className="h-full w-full border-gray-100 rounded-md border-[1px] flex flex-col justify-center items-center gap-1.5 p-2 dark:border-gray-800 md:gap-3">
         <h3 className="text-3xl text-gray-500 font-medium dark:text-gray-200 text-center mb-2">
           WHAT I USE

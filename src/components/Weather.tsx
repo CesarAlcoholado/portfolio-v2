@@ -10,17 +10,17 @@ export const Weather = () => {
   const [weather, setWeather] = useState<Data | null>()
   const { theme } = usePortfolioContext()
 
-    useEffect(() => {
-      try {
-        const callApi = async () => {
-          const result = await getWeather();
-          setWeather(result);
-        };
-        callApi()
-      } catch (error) {
-        console.error(error)
-      }
-    }, []);
+    // useEffect(() => {
+    //   try {
+    //     const callApi = async () => {
+    //       const result = await getWeather();
+    //       setWeather(result);
+    //     };
+    //     callApi()
+    //   } catch (error) {
+    //     console.error(error)
+    //   }
+    // }, []);
 
   return (
     <div className="w-full h-[130px] rounded-md bg-cardLight border-borderLight border-4 border-solid dark:bg-backgroundDark dark:border-borderDark shadow-sm shadow-gray-900/5 sm:grid-area-weather sm:row-start-8 sm:row-end-10 lg:h-full lg:col-start-1 lg:col-end-2 lg:row-start-4 lg:row-end-5 xl:col-start-4 xl:col-end-5 xl:row-start-2 xl:row-end-3">
