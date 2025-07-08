@@ -19,6 +19,7 @@ export const Projects = () => {
           Here you will find some of my recent projects
         </p>
       </div>
+      <div className="sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2.5 w-full h-auto">      
       {projects.map((project, index) => (
         <div
           className="w-full h-full rounded-md bg-cardLight border-borderLight border-4 border-solid dark:bg-backgroundDark dark:border-borderDark shadow-sm shadow-gray-900/5 "
@@ -47,7 +48,6 @@ export const Projects = () => {
             </p>
             <LazyLoadImage
               effect="blur"
-              onLoad={() => console.log("loading")}
               src={project.image}
               width={"100%"}
             />
@@ -64,6 +64,7 @@ export const Projects = () => {
           </div>
         </div>
       ))}
+      </div>
     </div>
   );
 }
