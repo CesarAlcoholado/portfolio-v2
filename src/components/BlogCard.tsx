@@ -50,7 +50,7 @@ export const BlogCard = () => {
         className="relative h-full w-full border-gray-100 rounded-md border-[1px] flex flex-col justify-center items-center gap-1.5 p-4 pb-0 dark:border-gray-800 box-border overflow-hidden"
       >
         <motion.div
-          className="absolute flex flex-col items-center w-[330px] h-full pt-2.5 px-10 md:w-[80%] border-solid border-blue-400 border-[1px] border-b-0 bottom-[-100%] shadow-[5px_5px_0px_0px_rgba(81,_162,_255,_1)] md:shadow-[10px_10px_0px_0px_rgba(81,_162,_255,_1)] lg:h-[200px] "
+          className="absolute flex flex-col items-center w-[330px] h-full pt-2.5 px-10 sm:h-[250px] md:h-[230px] md:w-[80%] border-solid border-blue-400 border-[1px] border-b-0 bottom-[-100%] shadow-[5px_5px_0px_0px_rgba(81,_162,_255,_1)] md:shadow-[10px_10px_0px_0px_rgba(81,_162,_255,_1)] lg:h-[230px] "
           // animate={isInView ? { y: -100 } : ""}
           animate={animationProps}
           transition={{ delay: 0.3, duration: 0.5 }}
@@ -70,7 +70,7 @@ export const BlogCard = () => {
               />
             </svg>
           </div>
-          <span className="flex text-xs font-firaSans text-gray-500 dark:text-gray-200 gap-1 m-2 md:text-base">
+          <span className="flex text-xs font-firaSans text-gray-500 dark:text-gray-200 gap-1 mt-5 md:mt-10 md:text-base">
             BLOG
             <svg
               fill="none"
