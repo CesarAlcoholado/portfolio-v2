@@ -5,7 +5,7 @@ export const ProjectsCard = () => {
   const { theme } = usePortfolioContext()
 
   return (
-    <div className="w-full h-[130px] rounded-md bg-cardLight border-borderLight border-4 border-solid dark:bg-backgroundDark dark:border-borderDark shadow-sm shadow-gray-900/5 sm:grid-projects sm:row-start-6 sm:row-end-8 lg:h-full lg:col-start-3 lg:col-end-4 lg:row-start-2 lg:row-end-4 xl:col-start-3 xl:col-end-4 xl:row-start-2 xl:row-end-3">
+    <div className="relative w-full h-[130px] rounded-md bg-cardLight border-blue-600/10 border-4 border-solid dark:bg-backgroundDark  shadow-sm shadow-gray-900/5 sm:grid-projects sm:row-start-6 sm:row-end-8 lg:h-full lg:col-start-3 lg:col-end-4 lg:row-start-2 lg:row-end-4 xl:col-start-3 xl:col-end-4 xl:row-start-2 xl:row-end-3 overflow-hidden card-animation scroll-reveal bg-gradient-to-r from-indigo-600/10 from-0% via-cyan-600/10 via-100% hover:border-blue-600/40">
       <div className="h-full w-full border-gray-100 rounded-md border-[1px] flex flex-col justify-center items-center gap-1.5 p-2 dark:border-gray-800">
         <div className="flex items-center gap-2">
           <span className="text-xs font-firaSans text-gray-500 dark:text-gray-200 md:text-base">

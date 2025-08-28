@@ -21,6 +21,13 @@
     "image": "/projectImages/ImenuAdmin.jpg",
     "repo": false
   },
+    {
+    "name": "MercadoLibre Clone",
+    "description": "This is a clone of the product details page of MercadoLibre",
+    "stack": ["React", "Redux", "HTML","CSS", "SASS"],
+    "image": "/projectImages/MeLi.png",
+    "repo": false
+  },
   {
     "name": "Maps app",
     "description": "Interactive map for calculating routes and distances",

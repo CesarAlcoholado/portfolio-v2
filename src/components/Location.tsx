@@ -3,7 +3,7 @@ import Arg_Sticker from "../assets/locationCard/Arg_Sticker.png"
 
 export const Location = () => {
   return (
-    <div className="w-full h-[200px] col-span-2 rounded-md bg-cardLight border-borderLight border-4 border-solid md:h-[250px] dark:bg-cardDark dark:border-borderDark shadow-sm shadow-gray-900/5 md:grid-location lg:h-full lg:col-start-2 lg:col-end-4 lg:row-start-1 lg:row-end-2 xl:col-start-3 xl:col-end-5 xl:row-start-1 xl:row-end-2">
+    <div className="w-full h-[200px] col-span-2 rounded-md bg-cardLight border-borderLight border-4 border-solid md:h-[250px] dark:bg-cardDark dark:border-borderDark shadow-sm shadow-gray-900/5 md:grid-location lg:h-full lg:col-start-2 lg:col-end-4 lg:row-start-1 lg:row-end-2 xl:col-start-3 xl:col-end-5 xl:row-start-1 xl:row-end-2 card-animation scroll-reveal">
       <div className="relative h-full w-full border-gray-100 rounded-md border-[1px] flex flex-col justify-center items-center gap-1.5 p-2 dark:border-gray-800 ">
         <div className="absolute flex items-center bottom-1.5 right-1.5">
           {/* <span className=" text-xs font-firaSans text-gray-700 dark:text-gray-200 z-10 md:text-base">

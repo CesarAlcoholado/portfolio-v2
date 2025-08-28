@@ -40,11 +40,11 @@ export const Projects = () => {
                 </svg>
               </div>
             ) : null}
-            <p className="text-base text-gray-500 dark:text-gray-200 text-center">
+            <p className="text-base text-gray-500 dark:text-gray-200 text-center font-montserrat">
               {project.name}
             </p>
             <p className="w-full text-sm text-gray-500 dark:text-gray-200 font-firaSans mt-3 mb-1 text-left">
-              Sit nulla magna ullamco aute tempor incididunt.
+              {project.description}
             </p>
             <LazyLoadImage
               effect="blur"
