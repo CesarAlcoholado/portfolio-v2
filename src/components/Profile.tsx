@@ -1,6 +1,4 @@
-import { LazyLoadImage } from "react-lazy-load-image-component";
-// import Icon from "../assets/profileCard/profile-pic.jpeg";
-import glassBubble from "../assets/profileCard/bubble.png";
+
 import { svgColor } from "../utils/constants";
 import { usePortfolioContext } from "../context/PortfolioContext";
 import '../index.css'
