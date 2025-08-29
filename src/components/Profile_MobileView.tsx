@@ -1,7 +1,7 @@
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { usePortfolioContext } from "../context/PortfolioContext";
 import { svgColor } from "../utils/constants";
-import Simon from "../assets/profileCard/Simon.jpg";
+import Icon from "/profile-pic.png";
 
 export const Profile_MobileView = () => {
 
@@ -40,8 +40,8 @@ export const Profile_MobileView = () => {
           </div>
         </div>
         <LazyLoadImage
-          src={Simon}
-          className="w-32 h-28 rounded-md shadow-sm shadow-gray-900/5 mt-2.5 mb-2.5 border-[1px] dark:border-gray-800"
+          src={Icon}
+          className="w-32 h-auto rounded-md shadow-sm shadow-gray-900/5 mt-2.5 mb-2.5 border-[1px] dark:border-gray-800"
         />
         <p className="text-md text-gray-500 font-medium dark:text-gray-200 font-firaSans">
           Hi! I'm{" "}

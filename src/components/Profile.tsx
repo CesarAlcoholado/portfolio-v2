@@ -1,5 +1,6 @@
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import Simon from "../assets/profileCard/Simon.jpg";
+// import Icon from "../assets/profileCard/profile-pic.jpeg";
+import glassBubble from "../assets/profileCard/bubble.png";
 import { svgColor } from "../utils/constants";
 import { usePortfolioContext } from "../context/PortfolioContext";
 import '../index.css'
@@ -16,8 +17,8 @@ export const Profile = () => {
       {isMobile ? (
         <Profile_MobileView />
       ) : (
-        <div className="md:grid-profile relative w-full h-[100%] md:grid md:grid-rows-[1fr_1fr] md:gap-2.5 md:grid-cols-1 rounded-md bg-cardLight dark:bg-backgroundDark md:row-start-1 md:row-end-4 md:min-h-[500px] p-0 lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-4 lg:min-h-[500px] lg:w-full xl:max-w-[530px] xl:col-start-1 xl:col-end-2 xl:row-start-1 xl:row-end-3 xl:h-[500px] scroll-reveal">
-          <div className="w-full h-full rounded-md border-borderLight border-4 border-solid dark:border-borderDark p-3 xl:row-start-1 xl:row-end-2 card-animation dark:bg-[linear-gradient(to_right,_rgba(79,70,229,0.1)_0%,_rgba(8,145,178,0.1)_100%)]">
+        <div className="md:grid-profile relative w-full h-[100%] md:grid md:grid-rows-[1fr_1fr] md:gap-2.5 md:grid-cols-1 rounded-md  md:row-start-1 md:row-end-4 md:min-h-[500px] p-0 lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-4 lg:min-h-[500px] lg:w-full xl:max-w-[530px] xl:col-start-1 xl:col-end-2 xl:row-start-1 xl:row-end-3 xl:h-[500px] scroll-reveal">
+          <div className="w-full h-full rounded-md border-borderLight border-4 border-solid dark:border-borderDark p-3 xl:row-start-1 xl:row-end-2 card-animation dark:bg-[linear-gradient(to_right,_rgba(79,70,229,0.1)_0%,_rgba(8,145,178,0.1)_100%)] bg-cardLight dark:bg-cardDark">
             <div className="flex w-full justify-between">
               <h4 className="text-lg text-gray-500 font-medium dark:text-gray-200 font-montserrat">
                 ABOUT ME
@@ -81,7 +82,7 @@ export const Profile = () => {
               </span>
             </p>
           </div>
-          <div className="w-full h-full rounded-md border-borderLight border-4 border-solid dark:border-borderDark p-3 xl:row-start-2 xl:row-end-3 card-animation dark:bg-[linear-gradient(to_right,_rgba(79,70,229,0.1)_0%,_rgba(8,145,178,0.1)_100%)]">
+          <div className="w-full h-full rounded-md border-borderLight border-4 border-solid dark:border-borderDark p-3 xl:row-start-2 xl:row-end-3 card-animation dark:bg-[linear-gradient(to_right,_rgba(79,70,229,0.1)_0%,_rgba(8,145,178,0.1)_100%)] bg-cardLight dark:bg-cardDark">
             <div className="h-full w-full flex flex-col justify-end">
               <h4 className="flex text-lg/tight text-gray-400 font-medium dark:text-gray-300 gap-2 align-baseline">
                 CURIOUS FACTS
@@ -128,11 +129,12 @@ export const Profile = () => {
               </ul>
             </div>
           </div>
-          <div className="absolute flex justify-center items-center rounded-full w-[250px] h-[250px] bg-cardLight dark:bg-backgroundDark transform top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-            <LazyLoadImage
-              src={Simon}
-              className="rounded-full w-[230px] h-[230px]"
-            />
+          <div className="absolute rounded-full w-[240px] h-[240px] transform top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[url(/profile-pic.png)] bg-cover bg-center bg-cardLight dark:bg-cardDark border-4 border-solid border-borderLight dark:border-borderDark ">
+            {/* <LazyLoadImage src={glassBubble} className="absolute w-full h-full"/> */}
+            {/* <LazyLoadImage
+              src={Icon}
+              className="w-full h-auto"
+            /> */}
           </div>
         </div>
       )}

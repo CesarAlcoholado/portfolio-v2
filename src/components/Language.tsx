@@ -6,7 +6,7 @@ export const Language = () => {
   const { theme } = usePortfolioContext()
 
   return (
-    <div className="w-full h-[130px] rounded-md bg-cardLight border-borderLight border-4 border-solid dark:bg-backgroundDark dark:border-borderDark shadow-sm shadow-gray-900/5 sm:grid-language sm:h-full sm:row-start-2 sm:row-end-3 lg:col-start-2 lg:col-end-3 lg:row-start-3 lg:row-end-4 xl:col-start-2 xl:col-end-3 xl:row-start-2 xl:row-end-3 card-animation scroll-reveal">
+    <div className="w-full h-[130px] rounded-md bg-backgroundLight border-borderLight border-4 border-solid dark:bg-backgroundDark dark:border-borderDark shadow-sm shadow-gray-900/5 sm:grid-language sm:h-full sm:row-start-2 sm:row-end-3 lg:col-start-2 lg:col-end-3 lg:row-start-3 lg:row-end-4 xl:col-start-2 xl:col-end-3 xl:row-start-2 xl:row-end-3 card-animation scroll-reveal">
       <div className="h-full w-full border-gray-100 rounded-md border-[1px] flex flex-col justify-center items-center p-2 dark:border-gray-800">
         <span className="text-xs font-firaSans text-gray-500 dark:text-gray-200 md:text-base">
           LANG.
