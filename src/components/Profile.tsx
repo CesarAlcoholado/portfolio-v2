@@ -4,9 +4,12 @@ import { usePortfolioContext } from "../context/PortfolioContext";
 import '../index.css'
 import { useMediaQuery } from "react-responsive";
 import { Profile_MobileView } from "./Profile_MobileView";
+import { useTranslation } from "react-i18next";
 
 export const Profile = () => {
   const { theme } = usePortfolioContext();
+
+  const { t } = useTranslation();
 
   const isMobile = useMediaQuery({ query: "(max-width: 767px)" }); // Ejemplo: hasta 767px es mobile
 
@@ -19,7 +22,8 @@ export const Profile = () => {
           <div className="w-full h-full rounded-md border-borderLight border-4 border-solid dark:border-borderDark p-3 xl:row-start-1 xl:row-end-2 card-animation dark:bg-[linear-gradient(to_right,_rgba(79,70,229,0.1)_0%,_rgba(8,145,178,0.1)_100%)] bg-cardLight dark:bg-cardDark">
             <div className="flex w-full justify-between">
               <h4 className="text-lg text-gray-500 font-medium dark:text-gray-200 font-montserrat">
-                ABOUT ME
+                {t("profile.title")}
+                {/* about me */}
               </h4>
               <div className="flex gap-1">
                 <svg

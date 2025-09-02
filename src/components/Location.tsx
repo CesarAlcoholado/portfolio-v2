@@ -13,7 +13,10 @@ export const Location = () => {
             BUENOS AIRES, ARGENTINA
           </p>
         </div>
-        <div className="absolute w-full h-full rounded-md opacity-70 bg-[url(/src/assets/locationCard/Location_Map.jpeg)] bg-cover bg-no-repeat top-0 bottom-0 md:bg-center brightness-75"></div>
+        <div
+          className="absolute w-full h-full rounded-md opacity-70
+         bg-[url(/src/assets/locationCard/Location_Map.jpeg)] bg-cover bg-no-repeat top-0 bottom-0 md:bg-center brightness-75 bg-image-animation"
+        ></div>
         <LazyLoadImage
           src={Arg_Sticker}
           className="absolute w-24 top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] brightness-75 hover:animate-spin-and-back"

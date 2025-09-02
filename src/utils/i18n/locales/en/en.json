@@ -1,0 +1,27 @@
+{
+  "navbar": {
+    "home": "HOME",
+    "projects": "PROJECTS"
+  },
+  "profile": {
+    "title": "ABOUT ME",
+    "description_1": "Hi! I'm Cesar",
+    "description_2": "A front-end dev from",
+    "facts": "CURIOUS FACTS",
+    "fact_1": "31 years old",
+    "fact_2": "Cat dad",
+    "fact_3": "C2 English level",
+    "fact_4": "Always learning"
+  },
+  "mode": "MODE",
+  "lang": "LANG",
+  "projects": {
+    "my": "my",
+    "projects": "PROJECTS",
+    "take_a_look": "Take a look"
+  },
+  "weather": "WEATHER",
+  "email": "contact",
+  "take_a_look": "GIVE IT A READ",
+  "stack": "WHAT I USE"
+}

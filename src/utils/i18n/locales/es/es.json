@@ -1,0 +1,27 @@
+{
+  "navbar": {
+    "home": "INICIO",
+    "projects": "PROYECTOS"
+  },
+  "profile": {
+    "title": "ACERCA DE MI",
+    "description_1": "Hola!soy Cesar",
+    "description_2": "Un dev front-end de",
+    "facts": "DATOS CURIOSOS",
+    "fact_1": "31 años",
+    "fact_2": "Papa gatuno",
+    "fact_3": "Nivel de Ingles C2",
+    "fact_4": "Siempre aprendiendo"
+  },
+  "mode": "MODO",
+  "lang": "IDIOMA",
+  "projects": {
+    "my": "mis",
+    "projects": "PROYECTOS",
+    "take_a_look": "echar un vistazo"
+  },
+  "weather": "CLIMA",
+  "email": "contacto",
+  "take_a_look": "IR A LEER",
+  "stack": "LO QUE USO"
+}

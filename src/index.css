@@ -55,6 +55,14 @@
 }
 
 
+/* .bg-image-animation {
+  background-image: url("/src/assets/locationCard/arg-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  filter: brightness(0.85);
+} */
+
 @theme {
   --color-backgroundDark: transparent;
   --color-backgroundLight: transparent;
