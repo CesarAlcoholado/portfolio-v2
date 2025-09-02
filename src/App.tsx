@@ -12,14 +12,14 @@ function App() {
   return (
     <BrowserRouter>
       <PortfolioProvider>
-        <div>
+        <>
           <NavBar/>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/projects" element={<Projects />} />
           </Routes>
-        </div>
+        </>
       </PortfolioProvider>
     </BrowserRouter>
   );
