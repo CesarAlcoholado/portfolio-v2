@@ -6,8 +6,12 @@ import {
   useInView,
 } from "framer-motion";
 import { useMediaQuery } from "react-responsive";
+import { useTranslation } from "react-i18next";
 
 export const BlogCard = () => {
+
+  const { i18n } = useTranslation();
+  const text = i18n.t("take_a_look");
   const [scope, animate] = useAnimate();
   // const isInView = useInView(scope);
   const ref = useRef(null);
@@ -86,7 +90,7 @@ export const BlogCard = () => {
               />
             </svg>
           </span>
-          <TypingEffect text="GIVE IT A READ »»" />
+          <TypingEffect text={text} />
         </motion.div>
       </div>
     </div>

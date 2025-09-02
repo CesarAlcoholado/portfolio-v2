@@ -5,8 +5,9 @@
   },
   "profile": {
     "title": "ABOUT ME",
-    "description_1": "Hi! I'm Cesar",
-    "description_2": "A front-end dev from",
+    "description_1": "Hi! I'm ",
+    "description_2": "A front-end dev from ",
+    "description_3": "Currently working as a freelancer",
     "facts": "CURIOUS FACTS",
     "fact_1": "31 years old",
     "fact_2": "Cat dad",
@@ -16,12 +17,12 @@
   "mode": "MODE",
   "lang": "LANG",
   "projects": {
-    "my": "my",
+    "my": "WORK",
     "projects": "PROJECTS",
     "take_a_look": "Take a look"
   },
   "weather": "WEATHER",
   "email": "contact",
-  "take_a_look": "GIVE IT A READ",
+  "take_a_look": "GIVE IT A READ »»",
   "stack": "WHAT I USE"
 }

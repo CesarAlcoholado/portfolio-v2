@@ -5,8 +5,9 @@
   },
   "profile": {
     "title": "ACERCA DE MI",
-    "description_1": "Hola!soy Cesar",
-    "description_2": "Un dev front-end de",
+    "description_1": "Hola! soy ",
+    "description_2": "Un dev front-end de ",
+    "description_3": "Actualmente trabajando como freelancer",
     "facts": "DATOS CURIOSOS",
     "fact_1": "31 años",
     "fact_2": "Papa gatuno",
@@ -16,12 +17,12 @@
   "mode": "MODO",
   "lang": "IDIOMA",
   "projects": {
-    "my": "mis",
+    "my": "MIS",
     "projects": "PROYECTOS",
-    "take_a_look": "echar un vistazo"
+    "take_a_look": "Echar un vistazo"
   },
   "weather": "CLIMA",
   "email": "contacto",
-  "take_a_look": "IR A LEER",
+  "take_a_look": "IR A LEER »»",
   "stack": "LO QUE USO"
 }

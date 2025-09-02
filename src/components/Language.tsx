@@ -8,17 +8,18 @@ export const Language = () => {
 
 const { theme } = usePortfolioContext()
 
-    const { i18n } = useTranslation();
-    // The i18n object has a changeLanguage method
-    const changeLanguage = (lng:string) => {
-    i18n.changeLanguage(lng);
-    }
+const { i18n, t } = useTranslation();
+
+// The i18n object has a changeLanguage method
+const changeLanguage = (lng:string) => {
+i18n.changeLanguage(lng);
+}
 
   return (
     <div className="w-full h-[130px] rounded-md bg-backgroundLight border-borderLight border-4 border-solid dark:bg-backgroundDark dark:border-borderDark shadow-sm shadow-gray-900/5 sm:grid-language sm:h-full sm:row-start-2 sm:row-end-3 lg:col-start-2 lg:col-end-3 lg:row-start-3 lg:row-end-4 xl:col-start-2 xl:col-end-3 xl:row-start-2 xl:row-end-3 card-animation scroll-reveal cursor-pointer" onClick={() => changeLanguage(i18next.language === 'es' ? 'en' : 'es')}>
       <div className="h-full w-full border-gray-100 rounded-md border-[1px] flex flex-col justify-center items-center p-2 dark:border-gray-800">
         <span className="text-xs font-firaSans text-gray-500 dark:text-gray-200 md:text-base">
-          LANG.
+          {t("lang")}
         </span>
         <p className="flex gap-1 text-2xl text-gray-500 font-medium dark:text-gray-200 md:text-3xl">
           <svg

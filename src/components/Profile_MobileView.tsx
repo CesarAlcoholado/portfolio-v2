@@ -6,13 +6,14 @@ import Icon from "/profile-pic.png";
 export const Profile_MobileView = () => {
 
   const { theme } = usePortfolioContext();
+  const { t } = useTranslation();
 
   return (
     <div className="col-span-2 w-full h-auto rounded-md bg-cardLight border-borderLight border-4 border-solid dark:bg-backgroundDark dark:border-borderDark shadow-sm shadow-gray-900/5">
       <div className="h-full w-full flex flex-col border-gray-100 rounded-md border-[1px] gap-2.5 p-4 dark:border-gray-800">
         <div className="flex w-full justify-between">
           <h4 className="text-sm text-gray-500 font-medium dark:text-gray-200 font-montserrat">
-            ABOUT ME
+            {t("profile.title")}
           </h4>
           <div className="flex gap-1">
             <svg
@@ -44,11 +45,11 @@ export const Profile_MobileView = () => {
           className="w-32 h-auto rounded-md shadow-sm shadow-gray-900/5 mt-2.5 mb-2.5 border-[1px] dark:border-gray-800"
         />
         <p className="text-md text-gray-500 font-medium dark:text-gray-200 font-firaSans">
-          Hi! I'm{" "}
+          {t("profile.description_1")}
           <span className="text-md text-blue-400 dark:text-gray-50 font-bold">
             César
           </span>{" "}
-          <br />A front-end dev. from{" "}
+          <br />{t("profile.description_2")}
           <span className="text-md font-medium text-blue-400">Arg</span>
           <span className="text-md text-gray-500 font-medium dark:text-gray-200">
             ent
@@ -56,7 +57,7 @@ export const Profile_MobileView = () => {
           <span className="text-md font-medium text-blue-400">ina 🧉</span>
           <br />
           <span className="flex text-md font-light text-gray-700 dark:text-gray-200 gap-2">
-            Currently working as a freelancer{" "}
+            {t("profile.description_3")}
             <svg
               fill="none"
               viewBox="0 0 24 24"
@@ -73,7 +74,7 @@ export const Profile_MobileView = () => {
           </span>
         </p>
         <h4 className="flex text-sm text-gray-400 font-medium dark:text-gray-300 gap-2 mt-5">
-          CURIOUS FACTS
+          {t("profile.facts")}
           <svg
             fill="none"
             viewBox="0 0 24 24"
@@ -92,26 +93,25 @@ export const Profile_MobileView = () => {
           <li className="text-md text-blue-500 font-bold">
             •
             <span className="text-md text-gray-700 font-light dark:text-gray-200 ml-3">
-              {" "}
-              31 years old
+              {t("profile.fact_1")}
             </span>
           </li>
           <li className="text-md text-blue-500 font-bold">
             •
             <span className="text-md text-gray-700 font-light dark:text-gray-200 ml-3">
-              Cat dad
+              {t("profile.fact_2")}
             </span>
           </li>
           <li className="text-md text-blue-500 font-bold">
             •
             <span className="text-md text-gray-700 font-light dark:text-gray-200 ml-3">
-              C2 english level
+              {t("profile.fact_3")}
             </span>
           </li>
           <li className="text-md text-blue-500 font-bold">
             •
             <span className="text-md text-gray-700 font-light dark:text-gray-200 ml-3">
-              Always learning
+              {t("profile.fact_4")}
             </span>
           </li>
         </ul>

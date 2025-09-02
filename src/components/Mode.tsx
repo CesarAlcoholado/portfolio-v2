@@ -2,9 +2,11 @@
 import { usePortfolioContext } from "../context/PortfolioContext"
 import { svgColor } from "../utils/constants";
 import "../index.css"
+import { useTranslation } from "react-i18next";
 
 export const Mode = () => {
   const { theme, toggleMode } = usePortfolioContext()
+  const { t } = useTranslation();
 
   return (
     <div
@@ -16,7 +18,7 @@ export const Mode = () => {
           {theme.toUpperCase()}
         </span>
         <p className="flex text-2xl text-gray-500 font-medium dark:text-gray-200 gap-2 md:text-3xl">
-          MODE
+          {t("mode")}
           {theme == "dark" ? (
             <svg
               fill="none"

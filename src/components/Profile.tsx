@@ -23,7 +23,6 @@ export const Profile = () => {
             <div className="flex w-full justify-between">
               <h4 className="text-lg text-gray-500 font-medium dark:text-gray-200 font-montserrat">
                 {t("profile.title")}
-                {/* about me */}
               </h4>
               <div className="flex gap-1">
                 <svg
@@ -51,11 +50,12 @@ export const Profile = () => {
               </div>
             </div>
             <p className="text-md text-gray-500 font-medium dark:text-gray-200 font-firaSans md:text-base mt-2.5">
-              Hi! I'm{" "}
+              {t("profile.description_1")}
               <span className="text-md text-blue-400 dark:text-gray-50 font-bold md:text-base">
                 César
               </span>{" "}
-              <br />A front-end dev. from{" "}
+              <br />
+              {t("profile.description_2")}
               <span className="text-md font-medium text-blue-400 md:text-base">
                 Arg
               </span>
@@ -67,7 +67,7 @@ export const Profile = () => {
               </span>
               <br />
               <span className="flex text-md font-light text-gray-700 dark:text-gray-200 gap-2 md:text-base">
-                Currently working as a freelancer{" "}
+                {t("profile.description_3")}
                 <svg
                   fill="none"
                   viewBox="0 0 24 24"
@@ -87,7 +87,7 @@ export const Profile = () => {
           <div className="w-full h-full rounded-md border-borderLight border-4 border-solid dark:border-borderDark p-3 xl:row-start-2 xl:row-end-3 card-animation dark:bg-[linear-gradient(to_right,_rgba(79,70,229,0.1)_0%,_rgba(8,145,178,0.1)_100%)] bg-cardLight dark:bg-cardDark">
             <div className="h-full w-full flex flex-col justify-end">
               <h4 className="flex text-lg/tight text-gray-400 font-medium dark:text-gray-300 gap-2 align-baseline">
-                CURIOUS FACTS
+                {t("profile.facts")}
                 <svg
                   fill="none"
                   viewBox="0 0 24 24"
@@ -106,26 +106,25 @@ export const Profile = () => {
                 <li className="text-md text-blue-500 font-bold">
                   •
                   <span className="text-md text-gray-700 font-light dark:text-gray-200 ml-3">
-                    {" "}
-                    31 years old
+                    {t("profile.fact_1")}
                   </span>
                 </li>
                 <li className="text-md text-blue-500 font-bold">
                   •
                   <span className="text-md text-gray-700 font-light dark:text-gray-200 ml-3">
-                    Cat dad
+                    {t("profile.fact_2")}
                   </span>
                 </li>
                 <li className="text-md text-blue-500 font-bold">
                   •
                   <span className="text-md text-gray-700 font-light dark:text-gray-200 ml-3">
-                    C2 english level
+                    {t("profile.fact_3")}
                   </span>
                 </li>
                 <li className="text-md text-blue-500 font-bold">
                   •
                   <span className="text-md text-gray-700 font-light dark:text-gray-200 ml-3">
-                    Always learning
+                    {t("profile.fact_4")}
                   </span>
                 </li>
               </ul>
