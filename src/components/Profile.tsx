@@ -21,7 +21,7 @@ export const Profile = () => {
         <div className="md:grid-profile relative w-full h-[100%] md:grid md:grid-rows-[1fr_1fr] md:gap-2.5 md:grid-cols-1 rounded-md  md:row-start-1 md:row-end-4 md:min-h-[500px] p-0 lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-4 lg:min-h-[500px] lg:w-full xl:max-w-[530px] xl:col-start-1 xl:col-end-2 xl:row-start-1 xl:row-end-3 xl:h-[500px] scroll-reveal">
           <div className="w-full h-full rounded-md border-borderLight border-4 border-solid dark:border-borderDark p-3 xl:row-start-1 xl:row-end-2 card-animation dark:bg-[linear-gradient(to_right,_rgba(79,70,229,0.1)_0%,_rgba(8,145,178,0.1)_100%)] bg-cardLight dark:bg-cardDark">
             <div className="flex w-full justify-between">
-              <h4 className="text-lg text-gray-500 font-medium dark:text-gray-200 font-montserrat">
+              <h4 className="text-lg text-gray-500 font-bold dark:text-gray-200 font-montserrat">
                 {t("profile.title")}
               </h4>
               <div className="flex gap-1">

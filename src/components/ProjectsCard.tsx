@@ -14,7 +14,7 @@ export const ProjectsCard = () => {
             {t("projects.my")}
           </span>
         </div>
-        <p className="text-2xl flex gap-2 font-medium text-gray-500 dark:text-gray-200 md:text-3xl">
+        <p className="text-xl flex gap-2 font-medium text-gray-500 dark:text-gray-200 sm:text-2xl md:text-3xl">
           <svg
             fill="none"
             viewBox="0 0 24 24"

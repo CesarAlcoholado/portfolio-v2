@@ -42,7 +42,7 @@ export const Weather = () => {
           {t("weather")}
         </span>
         {/* <div className="flex flex-col items-center gap-3"> */}
-        <p className="text-3xl font-medium text-gray-500 dark:text-gray-200">
+        <p className="text-xl font-medium text-gray-500 dark:text-gray-200 sm:text-2xl md:text-3xl">
           {/* {fhToCelsius(weather?.main.temp)} */}
           {weather?.main.temp.toFixed(1)} ℃
         </p>

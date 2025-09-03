@@ -17,7 +17,7 @@ export const Mode = () => {
         <span className="text-xs font-firaSans text-gray-500 dark:text-gray-200 md:text-base">
           {theme.toUpperCase()}
         </span>
-        <p className="flex text-2xl text-gray-500 font-medium dark:text-gray-200 gap-2 md:text-3xl">
+        <p className="flex text-xl text-gray-500 font-medium dark:text-gray-200 gap-2 sm:text-2xl md:text-3xl">
           {t("mode")}
           {theme == "dark" ? (
             <svg

@@ -2,6 +2,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import { usePortfolioContext } from "../context/PortfolioContext";
 import { svgColor } from "../utils/constants";
 import Icon from "/profile-pic.png";
+import { useTranslation } from "react-i18next";
 
 export const Profile_MobileView = () => {
 
@@ -12,14 +13,14 @@ export const Profile_MobileView = () => {
     <div className="col-span-2 w-full h-auto rounded-md bg-cardLight border-borderLight border-4 border-solid dark:bg-backgroundDark dark:border-borderDark shadow-sm shadow-gray-900/5">
       <div className="h-full w-full flex flex-col border-gray-100 rounded-md border-[1px] gap-2.5 p-4 dark:border-gray-800">
         <div className="flex w-full justify-between">
-          <h4 className="text-sm text-gray-500 font-medium dark:text-gray-200 font-montserrat">
+          <h4 className="text-base text-gray-500 font-bold dark:text-gray-200 font-montserrat sm:text-lg">
             {t("profile.title")}
           </h4>
           <div className="flex gap-1">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
-              className="w-[15px]"
+              className="w-3.5 sm:w-4"
               fill={`${svgColor[theme]}`}
             >
               <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
@@ -29,7 +30,7 @@ export const Profile_MobileView = () => {
               fill="none"
               viewBox="0 0 24 24"
               stroke-width="1.5"
-              className="w-[15px]"
+              className="w-3.5 sm:w-4"
               stroke={`${svgColor[theme]}`}
             >
               <path
@@ -44,26 +45,31 @@ export const Profile_MobileView = () => {
           src={Icon}
           className="w-32 h-auto rounded-md shadow-sm shadow-gray-900/5 mt-2.5 mb-2.5 border-[1px] dark:border-gray-800"
         />
-        <p className="text-md text-gray-500 font-medium dark:text-gray-200 font-firaSans">
+        <p className="text-sm text-gray-500 font-medium dark:text-gray-200 font-firaSans sm:text-base">
           {t("profile.description_1")}
-          <span className="text-md text-blue-400 dark:text-gray-50 font-bold">
+          <span className="text-sm text-blue-400 dark:text-gray-50 font-bold sm:text-base">
             César
           </span>{" "}
-          <br />{t("profile.description_2")}
-          <span className="text-md font-medium text-blue-400">Arg</span>
-          <span className="text-md text-gray-500 font-medium dark:text-gray-200">
+          <br />
+          {t("profile.description_2")}
+          <span className="text-sm font-medium text-blue-400 sm:text-base">
+            Arg
+          </span>
+          <span className="text-sm text-gray-500 font-medium dark:text-gray-200 sm:text-base">
             ent
           </span>
-          <span className="text-md font-medium text-blue-400">ina 🧉</span>
+          <span className="text-sm font-medium text-blue-400 sm:text-base">
+            ina 🧉
+          </span>
           <br />
-          <span className="flex text-md font-light text-gray-700 dark:text-gray-200 gap-2">
+          <span className="flex text-sm font-light text-gray-700 dark:text-gray-200 gap-2 sm:text-base">
             {t("profile.description_3")}
             <svg
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="#51A2FF"
-              width={"20px"}
+              className="w-5 sm:w-6"
             >
               <path
                 strokeLinecap="round"
@@ -73,14 +79,14 @@ export const Profile_MobileView = () => {
             </svg>
           </span>
         </p>
-        <h4 className="flex text-sm text-gray-400 font-medium dark:text-gray-300 gap-2 mt-5">
+        <h4 className="flex text-base text-gray-400 font-montserrat font-medium dark:text-gray-300 gap-2 mt-5 sm:text-lg">
           {t("profile.facts")}
           <svg
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke={`${svgColor[theme]}`}
-            width={"16px"}
+            className="w-3.5 sm:w-4"
           >
             <path
               strokeLinecap="round"
@@ -90,27 +96,27 @@ export const Profile_MobileView = () => {
           </svg>
         </h4>
         <ul className="flex flex-col font-firaSans">
-          <li className="text-md text-blue-500 font-bold">
+          <li className="text-blue-500 font-bold">
             •
-            <span className="text-md text-gray-700 font-light dark:text-gray-200 ml-3">
+            <span className="text-sm text-gray-700 font-light dark:text-gray-200 ml-3 sm:text-base">
               {t("profile.fact_1")}
             </span>
           </li>
-          <li className="text-md text-blue-500 font-bold">
+          <li className="text-blue-500 font-bold">
             •
-            <span className="text-md text-gray-700 font-light dark:text-gray-200 ml-3">
+            <span className="text-sm text-gray-700 font-light dark:text-gray-200 ml-3 sm:text-base">
               {t("profile.fact_2")}
             </span>
           </li>
-          <li className="text-md text-blue-500 font-bold">
+          <li className="text-blue-500 font-bold">
             •
-            <span className="text-md text-gray-700 font-light dark:text-gray-200 ml-3">
+            <span className="text-sm text-gray-700 font-light dark:text-gray-200 ml-3 sm:text-base">
               {t("profile.fact_3")}
             </span>
           </li>
-          <li className="text-md text-blue-500 font-bold">
+          <li className="text-blue-500 font-bold">
             •
-            <span className="text-md text-gray-700 font-light dark:text-gray-200 ml-3">
+            <span className="text-sm text-gray-700 font-light dark:text-gray-200 ml-3 sm:text-base ">
               {t("profile.fact_4")}
             </span>
           </li>

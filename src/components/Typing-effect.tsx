@@ -19,7 +19,7 @@ export function TypingEffect({ text = 'Typing Effect' }: { text: string }) {
   return (
     <h2
       ref={scope}
-      className="text-2xl text-center sm:text-4xl tracking-tighter md:text-3xl md:leading-[4rem] text-gray-500 font-medium dark:text-gray-200"
+      className="text-xl text-center sm:text-3xl tracking-tighter md:text-4xl md:leading-[4rem] text-gray-500 font-medium dark:text-gray-200"
     >
       {text.split("").map((letter, index) => (
         <motion.span

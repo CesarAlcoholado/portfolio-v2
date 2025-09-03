@@ -9,7 +9,7 @@ export const Location = () => {
           {/* <span className=" text-xs font-firaSans text-gray-700 dark:text-gray-200 z-10 md:text-base">
             LOCATION
           </span> */}
-          <p className="flex text-xl text-gray-700 font-medium dark:text-gray-200 z-10 md:text-3xl">
+          <p className="flex text-xl text-gray-700 font-medium dark:text-gray-200 z-10 sm:text-2xl md:text-3xl">
             BUENOS AIRES, ARGENTINA
           </p>
         </div>

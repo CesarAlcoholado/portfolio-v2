@@ -13,7 +13,7 @@ export const Email = () => {
         <span className="text-xs font-firaSans text-gray-500 dark:text-gray-200 md:text-base">
           {t("email")}
         </span>
-        <p className="flex gap-2.5 text-2xl font-medium text-gray-500 dark:text-gray-200 md:text-3xl">
+        <p className="flex gap-2.5 text-xl font-medium text-gray-500 dark:text-gray-200 sm:text-2xl md:text-3xl">
           <svg
             fill="none"
             viewBox="0 0 24 24"
