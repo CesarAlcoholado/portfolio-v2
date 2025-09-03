@@ -9,7 +9,7 @@ export const Stack = () => {
   return (
     <div className="col-span-2 w-full h-[250px] rounded-md bg-backgroundLight border-borderLight border-4 border-solid dark:bg-backgroundDark dark:border-borderDark shadow-sm shadow-gray-900/5 sm:grid-whatiuse sm:row-start-6 sm:row-end-10 sm:h-full sm:col-span-1 lg:col-start-2 lg:col-end-3 lg:row-start-5 lg:row-end-7 xl:col-start-2 xl:col-end-4 xl:row-start-4 xl:row-end-5 card-animation scroll-reveal">
       <div className="h-full w-full border-gray-100 rounded-md border-[1px] flex flex-col justify-center items-center gap-1.5 p-2 dark:border-gray-800 md:gap-3">
-        <h3 className="text-2xl text-gray-500 font-medium dark:text-gray-200 text-center mb-2">
+        <h3 className="text-2xl text-gray-500 font-medium font-montserrat dark:text-gray-200 text-center mb-2">
           {t("stack")}
         </h3>
         <ul className="list-none flex flex-col flex-wrap h-24 p-0 gap-1">
@@ -26,7 +26,7 @@ export const Stack = () => {
             </svg>
             REACT
           </li>
-          <li className="flex text-sm text-gray-700 font-light dark:text-gray-200 ml-2">
+          <li className="flex text-sm text-gray-700 font-light font-firaSans dark:text-gray-200 ml-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 128 128"
@@ -39,7 +39,7 @@ export const Stack = () => {
             </svg>
             REDUX
           </li>
-          <li className="flex text-sm text-gray-700 font-light dark:text-gray-200 ml-2">
+          <li className="flex text-sm text-gray-700 font-light font-firaSans dark:text-gray-200 ml-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 128 128"
@@ -52,7 +52,7 @@ export const Stack = () => {
             </svg>
             TAILWIND
           </li>
-          <li className="flex text-sm text-gray-700 font-light dark:text-gray-200 ml-2">
+          <li className="flex text-sm text-gray-700 font-light font-firaSans dark:text-gray-200 ml-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
@@ -65,7 +65,7 @@ export const Stack = () => {
             </svg>
             TYPESCRIPT
           </li>
-          <li className="flex text-sm text-gray-700 font-light dark:text-gray-200 ml-2">
+          <li className="flex text-sm text-gray-700 font-light font-firaSans dark:text-gray-200 ml-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -78,7 +78,7 @@ export const Stack = () => {
             </svg>
             FIGMA
           </li>
-          <li className="flex text-sm text-gray-700 font-light dark:text-gray-200 ml-2">
+          <li className="flex text-sm text-gray-700 font-light font-firaSans dark:text-gray-200 ml-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -91,7 +91,7 @@ export const Stack = () => {
             </svg>
             CSS
           </li>
-          <li className="flex text-sm text-gray-700 font-light dark:text-gray-200 ml-2">
+          <li className="flex text-sm text-gray-700 font-light font-firaSans dark:text-gray-200 ml-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -104,7 +104,7 @@ export const Stack = () => {
             </svg>
             HTML
           </li>
-          <li className="flex text-sm text-gray-700 font-light dark:text-gray-200 ml-2">
+          <li className="flex text-sm text-gray-700 font-light font-firaSans dark:text-gray-200 ml-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 128 128"

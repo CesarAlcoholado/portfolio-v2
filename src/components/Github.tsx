@@ -11,7 +11,7 @@ export const Github = () => {
         <p className="text-2xl text-gray-500 dark:text-gray-200 font-medium">
           GITHUB
         </p>
-        {/* <GitHubCalendar
+        <GitHubCalendar
           username="cesaralcoholado"
           fontSize={8}
           hideColorLegend={true}
@@ -22,7 +22,7 @@ export const Github = () => {
             color: `${theme == "dark" ? "#e5e7eb" : "#6a7282"}`,
           }}
           colorScheme={`${theme == "dark" ? "light" : "dark"}`}
-        /> */}
+        />
       </div>
     </div>
   );

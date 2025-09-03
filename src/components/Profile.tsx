@@ -130,12 +130,7 @@ export const Profile = () => {
               </ul>
             </div>
           </div>
-          <div className="absolute rounded-full w-[240px] h-[240px] transform top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[url(/profile-pic.png)] bg-cover bg-center bg-cardLight dark:bg-cardDark border-4 border-solid border-borderLight dark:border-borderDark ">
-            {/* <LazyLoadImage src={glassBubble} className="absolute w-full h-full"/> */}
-            {/* <LazyLoadImage
-              src={Icon}
-              className="w-full h-auto"
-            /> */}
+          <div className="absolute rounded-full w-[220px] h-[220px] transform top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[url(/profile-pic.png)] bg-cover bg-center bg-cardLight dark:bg-cardDark border-4 border-solid border-borderLight dark:border-borderDark ">
           </div>
         </div>
       )}

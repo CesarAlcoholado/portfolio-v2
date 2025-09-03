@@ -11,15 +11,15 @@ export const Weather = () => {
   const { t } = useTranslation();
 
     useEffect(() => {
-      // try {
-      //   const callApi = async () => {
-      //     const result = await getWeather();
-      //     setWeather(result);
-      //   };
-      //   callApi()
-      // } catch (error) {
-      //   console.error(error)
-      // }
+      try {
+        const callApi = async () => {
+          const result = await getWeather();
+          setWeather(result);
+        };
+        callApi()
+      } catch (error) {
+        console.error(error)
+      }
     }, []);
 
   return (
