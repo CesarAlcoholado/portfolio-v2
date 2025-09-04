@@ -1,12 +1,18 @@
 import { usePortfolioContext } from "../context/PortfolioContext";
 import { svgColor } from "../utils/constants";
+import { Link } from "react-router-dom";
 
 export const Twitter = () => {
 
   const { theme } = usePortfolioContext()
 
   return (
-    <div className="w-full h-[80px] col-span-2 rounded-md bg-backgroundLight border-borderLight border-4 border-solid dark:bg-backgroundDark dark:border-borderDark shadow-sm shadow-gray-900/5 sm:grid-twitter sm:row-start-11 sm:row-end-12 sm:col-span-1 sm:h-[130px] lg:col-start-3 lg:col-end-4 lg:row-start-6 lg:row-end-7 xl:col-start-4 xl:col-end-5 xl:row-start-3 xl:row-end-4 xl:h-full card-animation scroll-reveal cursor-pointer">
+    <Link
+      to="https://x.com/CodeinBlue_Dev"
+      rel="noreferrer noopener"
+      target="_blank"
+      className="w-full h-[80px] col-span-2 rounded-md bg-backgroundLight border-borderLight border-4 border-solid dark:bg-backgroundDark dark:border-borderDark shadow-sm shadow-gray-900/5 sm:grid-twitter sm:row-start-11 sm:row-end-12 sm:col-span-1 sm:h-[130px] lg:col-start-3 lg:col-end-4 lg:row-start-6 lg:row-end-7 xl:col-start-4 xl:col-end-5 xl:row-start-3 xl:row-end-4 xl:h-full card-animation scroll-reveal cursor-pointer"
+    >
       <div className="h-full w-full border-gray-100 rounded-md border-[1px] flex flex-col justify-center items-center gap-1.5 p-2 dark:border-gray-800">
         <p className="flex gap-2.5 text-xl font-medium text-gray-500 dark:text-gray-200 sm:text-2xl md:text-3xl">
           <svg
@@ -20,6 +26,6 @@ export const Twitter = () => {
           TWITTER
         </p>
       </div>
-    </div>
+    </Link>
   );
 };

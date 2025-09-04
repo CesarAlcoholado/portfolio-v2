@@ -11,7 +11,7 @@ function App() {
   return (
     <BrowserRouter>
       <PortfolioProvider>
-        <div className="px-1">
+        <div className="px-1 bg-[url(/bg.avif)] bg-repeat-y bg-center">
           <NavBar />
           <Routes>
             <Route path="/" element={<Home />} />

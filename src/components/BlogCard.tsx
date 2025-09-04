@@ -7,6 +7,7 @@ import {
 } from "framer-motion";
 import { useMediaQuery } from "react-responsive";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 export const BlogCard = () => {
 
@@ -45,7 +46,7 @@ export const BlogCard = () => {
   }, [isInView]);
 
   return (
-    <div
+    <Link to="/blogs"
       ref={scope}
       className="w-full h-[130px] col-span-2 rounded-md  border-blue-600/10 border-4 border-solid  shadow-sm shadow-gray-900/5 sm:grid-blog sm:h-[220px] lg:col-start-1 lg:col-end-2 lg:row-start-5 lg:row-end-7 lg:h-full xl:col-start-1 xl:col-end-2 xl:row-start-4 xl:row-end-5 card-animation scroll-reveal  dark:bg-[linear-gradient(to_right,_rgba(79,70,229,0.1)_0%,_rgba(8,145,178,0.1)_100%)] hover:border-blue-600/40 cursor-pointer"
     >
@@ -93,6 +94,6 @@ export const BlogCard = () => {
           <TypingEffect text={text} />
         </motion.div>
       </div>
-    </div>
+    </Link>
   );
 }

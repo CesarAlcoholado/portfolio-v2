@@ -5,6 +5,7 @@ import '../index.css'
 import { useMediaQuery } from "react-responsive";
 import { Profile_MobileView } from "./Profile_MobileView";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 export const Profile = () => {
   const { theme } = usePortfolioContext();
@@ -24,7 +25,8 @@ export const Profile = () => {
               <h4 className="text-lg text-gray-500 font-bold dark:text-gray-200 font-montserrat">
                 {t("profile.title")}
               </h4>
-              <div className="flex gap-1">
+              <div className="flex gap-2">
+                <Link to="https://x.com/CodeinBlue_Dev" rel="noreferrer noopener" target="_blank">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
@@ -33,6 +35,8 @@ export const Profile = () => {
                 >
                   <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
                 </svg>
+                </Link>
+                <Link to="/blogs">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -47,6 +51,7 @@ export const Profile = () => {
                     d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5M6 7.5h3v3H6v-3Z"
                   />
                 </svg>
+                </Link>
               </div>
             </div>
             <p className="text-md text-gray-500 font-medium dark:text-gray-200 font-firaSans md:text-base mt-2.5">
