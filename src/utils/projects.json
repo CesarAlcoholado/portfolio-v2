@@ -1,46 +1,54 @@
 [
   {
+    "name": "Proyecto Dino",
+    "description": "SPA made for a Paleonthological & Geological museum",
+    "stack": ["React","HTML","Tailwind"],
+    "image": "https://i.ibb.co/4wzqrX9b/Proyecto-Dino-website.jpg",
+    "repo": true,
+    "link": "https://proyectodinomuseum.netlify.app/"
+  },
+  {
     "name": "Parcel Plus",
     "description": "SPA made for a logistics & transport company",
     "stack": ["React","HTML","CSS"],
-    "image": "/projectImages/ParcelPlus.jpg",
+    "image": "https://i.ibb.co/7tFbTLxh/Parcel-Plus.jpg",
     "repo": true,
     "link": ""
   },
   {
     "name": "Digital Menu",
     "description": "Web app for ordering food by scanning a QrCode",
-    "stack": ["React", "Redux", "HTML","CSS", "SASS"],
-    "image": "/projectImages/ImenuClient.jpg",
+    "stack": ["React", "Redux", "HTML", "SASS"],
+    "image": "https://i.ibb.co/tMYYh4Z8/Imenu-Client.jpg",
     "repo": false
   },
   {
     "name": "Commerce Dashboard",
     "description": "Web app made for food orders managment",
-    "stack": ["React", "Redux", "HTML","CSS", "SASS"],
-    "image": "/projectImages/ImenuAdmin.jpg",
+    "stack": ["React", "Redux", "HTML", "SASS"],
+    "image": "https://i.ibb.co/fGGVTPKM/Imenu-Admin.jpg",
     "repo": false
   },
     {
     "name": "MercadoLibre Clone",
     "description": "This is a clone of the product details page of MercadoLibre",
-    "stack": ["React", "Redux", "HTML","CSS", "SASS"],
-    "image": "/projectImages/MeLi.png",
+    "stack": ["React", "Redux", "HTML", "SASS"],
+    "image": "https://i.ibb.co/CpRz7Y9K/MeLi.jpg",
     "repo": false
   },
   {
     "name": "Maps app",
     "description": "Interactive map for calculating routes and distances",
     "stack": ["React","Typescript", "HTML","CSS"],
-    "image": "/projectImages/MapsApp.png",
+    "image": "https://i.ibb.co/zh146BKB/MapsApp.png",
     "repo": true,
     "link": ""
   },
   {
     "name": "OpenAI art generator",
     "description": "This is a simple art generator app",
-    "stack": ["React","HTML","CSS", "Tailwind"],
-    "image": "/projectImages/artGenerator.png",
+    "stack": ["React","HTML", "Tailwind"],
+    "image": "https://i.ibb.co/xqZmDZfq/image-1.jpg",
     "repo": true,
     "link": ""
   },
@@ -48,7 +56,7 @@
     "name": "Dynamic presentation card",
     "description": "Presentation card generator",
     "stack": ["React","HTML","CSS"],
-    "image": "/projectImages/Presentation_card.png",
+    "image": "https://i.ibb.co/HDz0NpQS/Presentation-card.png",
     "repo": true,
     "link": ""
   }

@@ -6,7 +6,7 @@ import { usePortfolioContext } from "../context/PortfolioContext";
 
 export const Projects = () => {
 
-  const { theme } = usePortfolioContext()
+  const { theme } = usePortfolioContext();
 
   return (
     <div className="grid grid-cols-1 w-auto gap-2.5 h-auto place-items-center m-1.5 font-montserrat">
@@ -51,7 +51,7 @@ export const Projects = () => {
               src={project.image}
               width={"100%"}
             />
-            <ul className="w-full flex font-firaSans font-sm text-gray-500 dark:text-gray-200 m-1">
+            <ul className="w-full flex font-firaSans font-sm text-gray-500 dark:text-gray-200 m-1 flex-wrap">
               {project.stack.map((tech, index) => (
                 <li
                   key={index}
