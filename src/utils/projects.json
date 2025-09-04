@@ -2,62 +2,73 @@
   {
     "name": "Proyecto Dino",
     "description": "SPA made for a Paleonthological & Geological museum",
-    "stack": ["React","HTML","Tailwind"],
+    "stack": ["React", "Typescript", "Tailwind"],
     "image": "https://i.ibb.co/4wzqrX9b/Proyecto-Dino-website.jpg",
-    "repo": true,
+    "repo": "https://github.com/CesarAlcoholado/ProyectoDino",
+    "youtube": "",
     "link": "https://proyectodinomuseum.netlify.app/"
   },
   {
     "name": "Parcel Plus",
     "description": "SPA made for a logistics & transport company",
-    "stack": ["React","HTML","CSS"],
+    "stack": ["React","CSS"],
     "image": "https://i.ibb.co/7tFbTLxh/Parcel-Plus.jpg",
-    "repo": true,
-    "link": ""
+    "repo": "https://github.com/CesarAlcoholado/ParcelPlus",
+    "youtube": "",
+    "link": "https://parcel-plus.vercel.app/"
   },
   {
     "name": "Digital Menu",
     "description": "Web app for ordering food by scanning a QrCode",
-    "stack": ["React", "Redux", "HTML", "SASS"],
+    "stack": ["React", "Redux", "SASS"],
     "image": "https://i.ibb.co/tMYYh4Z8/Imenu-Client.jpg",
-    "repo": false
+    "repo": "",
+    "youtube": "https://www.youtube.com/watch?v=HdXbCs5U6x0&ab_channel=TobiasAlejandre",
+    "link": ""
   },
   {
     "name": "Commerce Dashboard",
     "description": "Web app made for food orders managment",
-    "stack": ["React", "Redux", "HTML", "SASS"],
+    "stack": ["React", "Redux", "SASS"],
     "image": "https://i.ibb.co/fGGVTPKM/Imenu-Admin.jpg",
-    "repo": false
+    "repo": "",
+    "youtube": "https://www.youtube.com/watch?v=lyyQhdvkMzM&ab_channel=TobiasAlejandre",
+    "link": ""
   },
     {
     "name": "MercadoLibre Clone",
     "description": "This is a clone of the product details page of MercadoLibre",
-    "stack": ["React", "Redux", "HTML", "SASS"],
+    "stack": ["React", "Typescript", "Chakra-UI"],
     "image": "https://i.ibb.co/CpRz7Y9K/MeLi.jpg",
-    "repo": false
+    "repo": "https://github.com/CesarAlcoholado/mercadolibre-details-challenge",
+    "youtube": "",
+    "link": "https://meli-product-challenge.netlify.app/productId"
   },
   {
     "name": "Maps app",
     "description": "Interactive map for calculating routes and distances",
-    "stack": ["React","Typescript", "HTML","CSS"],
+    "stack": ["React","Typescript", "Bootswatch"],
     "image": "https://i.ibb.co/zh146BKB/MapsApp.png",
-    "repo": true,
-    "link": ""
+    "repo": "https://github.com/CesarAlcoholado/Maps-App-React-Typescript",
+    "youtube": "",
+    "link": "https://routes-maps-app.netlify.app/"
   },
   {
     "name": "OpenAI art generator",
     "description": "This is a simple art generator app",
-    "stack": ["React","HTML", "Tailwind"],
+    "stack": ["React", "Tailwind"],
     "image": "https://i.ibb.co/xqZmDZfq/image-1.jpg",
-    "repo": true,
-    "link": ""
+    "repo": "https://github.com/CesarAlcoholado/OpenAI-Art-Generator",
+    "youtube": "",
+    "link": "https://open-ai-art-generator-9n5y.vercel.app/"
   },
   {
     "name": "Dynamic presentation card",
     "description": "Presentation card generator",
-    "stack": ["React","HTML","CSS"],
+    "stack": ["React","Tailwind"],
     "image": "https://i.ibb.co/HDz0NpQS/Presentation-card.png",
-    "repo": true,
-    "link": ""
+    "repo": "https://github.com/CesarAlcoholado/Dynamic-presentation-card",
+    "youtube": "",
+    "link": "https://dynamic-presentation-card-6bjh.vercel.app/"
   }
 ]
