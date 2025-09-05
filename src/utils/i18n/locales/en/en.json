@@ -24,5 +24,10 @@
   "weather": "WEATHER",
   "email": "contact",
   "take_a_look": "GIVE IT A READ »»",
-  "stack": "WHAT I USE"
+  "stack": "WHAT I USE",
+  "projects_page": {
+    "title": "Check out my work",
+    "description_1": "Here are some of the projects I've worked on recently.",
+    "description_2": "Visit my Blog or my social networks to see what else I'm working on."
+  }
 }

@@ -24,5 +24,10 @@
   "weather": "CLIMA",
   "email": "contacto",
   "take_a_look": "IR A LEER »»",
-  "stack": "LO QUE USO"
+  "stack": "LO QUE USO",
+  "projects_page": {
+    "title": "Echá un vistazo a mis trabajos",
+    "description_1": "Estos son algunos de los proyectos en los que he trabajado recientemente.",
+    "description_2": "Visitá mi Blog o mis redes para ver en qué más estoy trabajando."
+  }
 }

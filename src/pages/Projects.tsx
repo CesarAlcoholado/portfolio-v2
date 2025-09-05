@@ -4,23 +4,28 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 import { svgColor } from "../utils/constants";
 import { usePortfolioContext } from "../context/PortfolioContext";
 import { Link } from "react-router-dom";
+import i18next from "i18next";
+import { useTranslation } from "react-i18next";
 
 export const Projects = () => {
 
   const { theme } = usePortfolioContext();
+  const { t } = useTranslation();
 
   return (
     <div className="grid grid-cols-1 w-auto gap-2.5 h-auto place-items-center m-1.5 font-montserrat">
-      <div className="w-full h-auto rounded-md bg-cardLight border-borderLight border-4 border-solid dark:bg-backgroundDark dark:border-borderDark shadow-sm shadow-gray-900/5 p-2">
-        <h2 className="text-3xl font-medium mb-1 text-gray-500 dark:text-gray-200">
-          {" "}
-          Work experience
+      <div className="w-full h-auto rounded-md bg-cardLight border-borderLight border-4 border-solid dark:bg-backgroundDark dark:border-borderDark shadow-sm shadow-gray-900/5 p-2 card-animation">
+        <h2 className="text-xl font-montserrat font-bold mb-6 text-gray-500 dark:text-gray-200 md:text-2xl">
+          {t("projects_page.title")}
         </h2>
-        <p className="text-base font-medium mb-1 text-gray-500 dark:text-gray-200 font-firaSans">
-          Here you will find some of my recent projects
+        <p className="text-base font-light mb-2 text-gray-500 dark:text-gray-200 font-firaSans md:text-lg">
+          {t("projects_page.description_1")}
+        </p>
+        <p className="text-sm font-extralight mb-1 text-gray-300 dark:text-gray-300 font-firaSans md:text-base">
+          {t("projects_page.description_2")}
         </p>
       </div>
-      <div className="sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2.5 w-full h-auto">
+      <div className="sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2.5 w-full h-auto">
         {projects.map((project, index) => (
           <div
             className="w-full h-full rounded-md bg-cardLight border-borderLight border-4 border-solid dark:bg-backgroundDark dark:border-borderDark shadow-sm shadow-gray-900/5 card-animation"
@@ -28,8 +33,10 @@ export const Projects = () => {
           >
             <div className="relative h-full w-full border-gray-100 rounded-md border-[1px] flex flex-col justify-between items-center gap-1.5 p-2 dark:border-gray-800">
               <div className="w-full flex justify-between items-start">
-                <h2 className="text-xl text-gray-500 dark:text-gray-200 text-left font-montserrat font-bold">
-                  {project.name}
+                <h2 className="text-lg text-gray-500 dark:text-gray-200 text-left font-montserrat font-medium md:text-xl">
+                  {i18next.language === "es"
+                    ? project.name_es
+                    : project.name_en}
                 </h2>
                 <div className="flex gap-1.5">
                   {project.repo && (
@@ -94,10 +101,12 @@ export const Projects = () => {
                   )}
                 </div>
               </div>
-              <p className="w-full text-sm text-gray-500 dark:text-gray-200 font-firaSans mt-3 mb-1 text-left">
-                {project.description}
+              <p className="w-full text-sm text-gray-500 dark:text-gray-200 font-firaSans mt-3 mb-1 text-left font-light md:text-base">
+                {i18next.language === "es"
+                  ? project.description_es
+                  : project.description_en}
               </p>
-              <LazyLoadImage effect="blur" src={project.image} width={"100%"} />
+              <LazyLoadImage className="xl:max-h-[189px] object-cover" effect="blur" src={project.image} width={"100%"} />
               <ul className="w-full flex font-firaSans font-sm text-gray-500 dark:text-gray-200 m-1 flex-wrap ">
                 {project.stack.map((tech, index) => (
                   <li

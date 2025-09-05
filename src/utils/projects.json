@@ -1,7 +1,9 @@
 [
   {
-    "name": "Proyecto Dino",
-    "description": "SPA made for a Paleonthological & Geological museum",
+    "name_en": "Proyecto Dino",
+    "name_es": "Proyecto Dino",
+    "description_en": "SPA made for a Paleonthological & Geological museum",
+    "description_es": "SPA hecha para un museo Paleontológico y Geológico",
     "stack": ["React", "Typescript", "Tailwind"],
     "image": "https://i.ibb.co/4wzqrX9b/Proyecto-Dino-website.jpg",
     "repo": "https://github.com/CesarAlcoholado/ProyectoDino",
@@ -9,8 +11,10 @@
     "link": "https://proyectodinomuseum.netlify.app/"
   },
   {
-    "name": "Parcel Plus",
-    "description": "SPA made for a logistics & transport company",
+    "name_en": "Parcel Plus",
+    "name_es": "Parcel Plus",
+    "description_en": "SPA made for a logistics & transport company",
+    "description_es": "SPA hecha para una empresa de logística y transporte",
     "stack": ["React","CSS"],
     "image": "https://i.ibb.co/7tFbTLxh/Parcel-Plus.jpg",
     "repo": "https://github.com/CesarAlcoholado/ParcelPlus",
@@ -18,8 +22,10 @@
     "link": "https://parcel-plus.vercel.app/"
   },
   {
-    "name": "Digital Menu",
-    "description": "Web app for ordering food by scanning a QrCode",
+    "name_en": "Digital Menu",
+    "name_es": "Menu Digital",
+    "description_en": "Web app for ordering food by scanning a QrCode",
+    "description_es": "App web para ordenar comida escaneando un código Qr",
     "stack": ["React", "Redux", "SASS"],
     "image": "https://i.ibb.co/tMYYh4Z8/Imenu-Client.jpg",
     "repo": "",
@@ -27,8 +33,10 @@
     "link": ""
   },
   {
-    "name": "Commerce Dashboard",
-    "description": "Web app made for food orders managment",
+    "name_en": "Commerce Dashboard",
+    "name_es": "Dashboard de comercio",
+    "description_en": "Web app made for food orders managment",
+    "description_es": "App web hecha para la gestión de pedidos de comida",
     "stack": ["React", "Redux", "SASS"],
     "image": "https://i.ibb.co/fGGVTPKM/Imenu-Admin.jpg",
     "repo": "",
@@ -36,8 +44,10 @@
     "link": ""
   },
     {
-    "name": "MercadoLibre Clone",
-    "description": "This is a clone of the product details page of MercadoLibre",
+    "name_en": "MercadoLibre Clone",
+    "name_es": "Clon de MercadoLibre",
+    "description_en": "This is a clone of the product details page of MercadoLibre",
+    "description_es": "Este es un clon de la página de detalles de producto de MercadoLibre",
     "stack": ["React", "Typescript", "Chakra-UI"],
     "image": "https://i.ibb.co/CpRz7Y9K/MeLi.jpg",
     "repo": "https://github.com/CesarAlcoholado/mercadolibre-details-challenge",
@@ -45,8 +55,10 @@
     "link": "https://meli-product-challenge.netlify.app/productId"
   },
   {
-    "name": "Maps app",
-    "description": "Interactive map for calculating routes and distances",
+    "name_en": "Maps app",
+    "name_es": "App de mapas",
+    "description_en": "Interactive map for calculating routes and distances",
+    "description_es": "Mapa interactivo para calcular rutas y distancias",
     "stack": ["React","Typescript", "Bootswatch"],
     "image": "https://i.ibb.co/zh146BKB/MapsApp.png",
     "repo": "https://github.com/CesarAlcoholado/Maps-App-React-Typescript",
@@ -54,8 +66,10 @@
     "link": "https://routes-maps-app.netlify.app/"
   },
   {
-    "name": "OpenAI art generator",
-    "description": "This is a simple art generator app",
+    "name_en": "OpenAI art generator",
+    "name_es": "generador de arte con OpenAI",
+    "description_en": "This is a simple art generator app",
+    "description_es": "Esta es una app simple para generar arte con IA",
     "stack": ["React", "Tailwind"],
     "image": "https://i.ibb.co/xqZmDZfq/image-1.jpg",
     "repo": "https://github.com/CesarAlcoholado/OpenAI-Art-Generator",
@@ -63,8 +77,10 @@
     "link": "https://open-ai-art-generator-9n5y.vercel.app/"
   },
   {
-    "name": "Dynamic presentation card",
-    "description": "Presentation card generator",
+    "name_en": "Dynamic presentation card",
+    "name_es": "Carta dinamica de presentación",
+    "description_en": "Presentation card generator",
+    "description_es": "Generador de cartas de presentación",
     "stack": ["React","Tailwind"],
     "image": "https://i.ibb.co/HDz0NpQS/Presentation-card.png",
     "repo": "https://github.com/CesarAlcoholado/Dynamic-presentation-card",
