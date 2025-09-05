@@ -1,9 +1,7 @@
 import { motion, useAnimate, useInView } from 'framer-motion';
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
  
 export function TypingEffect({ text = 'Typing Effect' }: { text: string }) {
-  const ref = React.useRef(null);
-  // const isInView = useInView(ref, { once: true });
 
 
 
