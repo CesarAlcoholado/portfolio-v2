@@ -1,40 +1,67 @@
+import { useEffect, useState } from "react";
+import Markdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+
 
 export const Blogs = () => {
+  const [postContent, setPostContent] = useState("");
+
+  useEffect(() => {
+    // Fetch the .md file from the public folder
+    fetch("/Posts/Post_Figma.md")
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return response.text();
+      })
+      .then((text) => {
+        setPostContent(text);
+      })
+      .catch((error) => {
+        console.error("Failed to load blog post:", error);
+      });
+  }, []); // The empty array ensures this runs only once
+
   return (
-      <section className="h-dvh px-6 mx-auto flex justify-center items-center">
-        <div className="flex justify-center items-center gap-10">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            className="size-6 text-amber-300/50"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z"
-            />
-          </svg>
-          <h2 className="text-3xl text-gray-400">I'm writing my next blog! Coming soon!</h2>
-          <div className="flex">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              className="size-6 text-amber-300/50"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z"
-              />
-            </svg>
-          </div>
-        </div>
-      </section>
+    // <section className="h-dvh px-6 mx-auto flex justify-center items-center">
+    //   <div className="flex flex-col justify-center items-center gap-10 text">
+    <section className="text-gray-500 dark:text-gray-200 max-w-6xl mx-auto gap-4 p-2.5 list-disc">
+      <Markdown
+        remarkPlugins={[remarkGfm]}
+        components={{
+          h1({ children }) {
+            return (
+              <h1 className="text-bold text-3xl/relaxed font-montserrat text-center">
+                {children}
+              </h1>
+            );
+          },
+          h2({ children }) {
+            return (
+              <h2 className="text-bold text-2xl/relaxed font-montserrat">
+                {children}
+              </h2>
+            );
+          },
+          h4({ children }) {
+            return (
+              <h4 className="text-xl/relaxed font-montserrat inline mr-4 text-left">
+                {children}
+              </h4>
+            );
+          },
+          p({ children }) {
+            return (
+              <p className="font-normal text-base font-firaSans">{children}</p>
+            );
+          },
+          ul({ children }) {
+            return <ul className="list-inside list-disc my-4">{children}</ul>;
+          },
+        }}
+        children={postContent ? postContent : "Loading..."}
+      ></Markdown>
+    </section>
   );
 };
